@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="760" viewBox="0 0 640 760" role="img" aria-labelledby="title desc">
+<title id="title">VAGTechNL mobile projects</title>
+<desc id="desc">Stacked mobile cards for Forum, Knowledge Base and Research and Tooling.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07080B"/><stop offset="1" stop-color="#0D0F13"/></linearGradient>
+  <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14171C"/><stop offset="1" stop-color="#0D0F13"/></linearGradient>
+</defs>
+<rect width="640" height="760" rx="28" fill="url(#bg)"/>
+<rect x="1" y="1" width="638" height="758" rx="27" fill="none" stroke="#1C2026" stroke-width="2"/>
+<g font-family="Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+  <text x="36" y="48" fill="#6F7682" font-size="14" font-weight="700" letter-spacing="2.2">ACTIVE SYSTEMS</text>
+  <text x="36" y="84" fill="#FFFFFF" font-size="28" font-weight="800">One technical ecosystem.</text>
+  <path d="M36 103H604" stroke="#1C2026"/>
+  <g transform="translate(36 126)">
+    <rect width="568" height="180" rx="20" fill="url(#card)" stroke="#1C2026"/>
+    <rect width="5" height="180" rx="2.5" fill="#E10600"/>
+    <text x="26" y="34" fill="#6F7682" font-size="13" font-weight="700" letter-spacing="1.6">01 / COMMUNITY</text>
+    <text x="26" y="72" fill="#FFFFFF" font-size="28" font-weight="800">FORUM</text>
+    <text x="26" y="108" fill="#A7ADB7" font-size="17">Diagnostics, coding and retrofit knowledge</text>
+    <text x="26" y="133" fill="#A7ADB7" font-size="17">built around real-world cases.</text>
+    <text x="26" y="162" fill="#6F7682" font-size="12" font-weight="700">DISCUSS · VERIFY · SHARE</text>
+    <g transform="translate(486 30)" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect width="48" height="34" rx="9" stroke="#E10600" stroke-width="2"/><path d="M10 14H38M10 22H31M12 34L9 44L22 34" stroke="#6F7682" stroke-width="2"/></g>
+  </g>
+  <g transform="translate(36 326)">
+    <rect width="568" height="180" rx="20" fill="url(#card)" stroke="#1C2026"/>
+    <rect width="5" height="180" rx="2.5" fill="#E10600" opacity=".78"/>
+    <text x="26" y="34" fill="#6F7682" font-size="13" font-weight="700" letter-spacing="1.6">02 / EVIDENCE</text>
+    <text x="26" y="72" fill="#FFFFFF" font-size="26" font-weight="800">KNOWLEDGE BASE</text>
+    <text x="26" y="108" fill="#A7ADB7" font-size="17">Source, evidence, claim and conclusion</text>
+    <text x="26" y="133" fill="#A7ADB7" font-size="17">remain explicitly traceable.</text>
+    <text x="26" y="162" fill="#6F7682" font-size="12" font-weight="700">SOURCE · TRACE · PROVE</text>
+    <g transform="translate(490 28)" fill="none" stroke-linecap="round"><rect width="42" height="50" rx="8" stroke="#6F7682" stroke-width="2"/><path d="M9 13H33M9 24H33M9 35H27" stroke="#A7ADB7" stroke-width="2"/><circle cx="34" cy="42" r="7" stroke="#E10600" stroke-width="2"/></g>
+  </g>
+  <g transform="translate(36 526)">
+    <rect width="568" height="180" rx="20" fill="url(#card)" stroke="#1C2026"/>
+    <rect width="5" height="180" rx="2.5" fill="#E10600" opacity=".56"/>
+    <text x="26" y="34" fill="#6F7682" font-size="13" font-weight="700" letter-spacing="1.6">03 / ENGINEERING</text>
+    <text x="26" y="72" fill="#FFFFFF" font-size="26" font-weight="800">RESEARCH / TOOLING</text>
+    <text x="26" y="108" fill="#A7ADB7" font-size="17">Modules, datasets and protocols.</text>
+    <text x="26" y="133" fill="#A7ADB7" font-size="17">Tooling for reproducible technical work.</text>
+    <text x="26" y="162" fill="#6F7682" font-size="12" font-weight="700">ANALYZE · BUILD · AUTOMATE</text>
+    <g transform="translate(480 31)" fill="none" stroke-linecap="round"><circle cx="16" cy="16" r="7" stroke="#E10600" stroke-width="2"/><circle cx="52" cy="7" r="7" stroke="#6F7682" stroke-width="2"/><circle cx="52" cy="43" r="7" stroke="#6F7682" stroke-width="2"/><path d="M23 14L45 9M23 21L45 40" stroke="#A7ADB7" stroke-width="2"/></g>
+  </g>
+</g>
+</svg>

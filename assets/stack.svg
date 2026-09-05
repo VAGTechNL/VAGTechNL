@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-labelledby="title desc">
+<title id="title">VAGTechNL platform stack</title>
+<desc id="desc">Software stack and automotive protocol domains used across VAGTechNL.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07080B"/><stop offset="1" stop-color="#0D0F13"/></linearGradient>
+</defs>
+<rect width="1200" height="270" rx="28" fill="url(#bg)"/>
+<rect x="1" y="1" width="1198" height="268" rx="27" fill="none" stroke="#1C2026" stroke-width="2"/>
+<g font-family="Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+  <g transform="translate(48 46)">
+    <text x="0" y="0" fill="#6F7682" font-size="13" font-weight="700" letter-spacing="2.2">SOFTWARE PLATFORM</text>
+    <text x="0" y="42" fill="#FFFFFF" font-size="28" font-weight="800">Build the tooling around the technical work.</text>
+    <g transform="translate(0 78)">
+      <rect width="126" height="46" rx="13" fill="#14171C" stroke="#1C2026"/><text x="63" y="29" text-anchor="middle" fill="#E6E8EB" font-size="15" font-weight="700">Next.js</text>
+      <g transform="translate(140)"><rect width="116" height="46" rx="13" fill="#14171C" stroke="#1C2026"/><text x="58" y="29" text-anchor="middle" fill="#E6E8EB" font-size="15" font-weight="700">React</text></g>
+      <g transform="translate(270)"><rect width="144" height="46" rx="13" fill="#14171C" stroke="#1C2026"/><text x="72" y="29" text-anchor="middle" fill="#E6E8EB" font-size="15" font-weight="700">TypeScript</text></g>
+      <g transform="translate(428)"><rect width="150" height="46" rx="13" fill="#14171C" stroke="#1C2026"/><text x="75" y="29" text-anchor="middle" fill="#E6E8EB" font-size="15" font-weight="700">Tailwind CSS</text></g>
+    </g>
+    <text x="0" y="160" fill="#6F7682" font-size="14">Git · GitHub · internal tooling · automation</text>
+  </g>
+
+  <path d="M664 40V230" stroke="#1C2026"/>
+  <g transform="translate(708 46)">
+    <text x="0" y="0" fill="#6F7682" font-size="13" font-weight="700" letter-spacing="2.2">AUTOMOTIVE DOMAIN</text>
+    <text x="0" y="42" fill="#FFFFFF" font-size="28" font-weight="800">Protocols before shortcuts.</text>
+    <g transform="translate(0 78)" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+      <rect width="92" height="46" rx="13" fill="#14171C" stroke="#E10600" stroke-opacity="0.55"/><text x="46" y="29" text-anchor="middle" fill="#FF2A23" font-size="15" font-weight="700">CAN</text>
+      <g transform="translate(106)"><rect width="92" height="46" rx="13" fill="#14171C" stroke="#1C2026"/><text x="46" y="29" text-anchor="middle" fill="#E6E8EB" font-size="15" font-weight="700">UDS</text></g>
+      <g transform="translate(212)"><rect width="92" height="46" rx="13" fill="#14171C" stroke="#1C2026"/><text x="46" y="29" text-anchor="middle" fill="#E6E8EB" font-size="15" font-weight="700">ODX</text></g>
+      <g transform="translate(318)"><rect width="92" height="46" rx="13" fill="#14171C" stroke="#1C2026"/><text x="46" y="29" text-anchor="middle" fill="#E6E8EB" font-size="15" font-weight="700">MQB</text></g>
+    </g>
+    <text x="0" y="160" fill="#6F7682" font-size="14">MIB · coding · datasets · OEM integration</text>
+  </g>
+</g>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+  <title id="title">VAGTechNL technical overview</title>
+  <desc id="desc">Dark technical panel showing VAGTechNL focus areas, protocols and software stack.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D0F13"/>
+      <stop offset="1" stop-color="#14171C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="300" rx="24" fill="#07080B"/>
+  <rect x="1" y="1" width="1198" height="298" rx="23" fill="none" stroke="#1C2026" stroke-width="2"/>
+
+  <g transform="translate(28 24)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <rect width="1144" height="252" rx="18" fill="url(#panel)" stroke="#1C2026"/>
+    <rect width="1144" height="44" rx="18" fill="#14171C"/>
+    <path d="M0 44H1144" stroke="#1C2026"/>
+    <circle cx="22" cy="22" r="4" fill="#E10600"/>
+    <circle cx="38" cy="22" r="4" fill="#6F7682" opacity="0.60"/>
+    <circle cx="54" cy="22" r="4" fill="#6F7682" opacity="0.30"/>
+    <text x="80" y="28" fill="#6F7682" font-size="13">vagtechnl@github:~ / platform</text>
+
+    <g transform="translate(34 78)">
+      <text x="0" y="0" fill="#E10600" font-size="15">$</text>
+      <text x="24" y="0" fill="#E6E8EB" font-size="17">focus --active</text>
+
+      <circle cx="5" cy="43" r="4" fill="#E10600"/>
+      <text x="24" y="49" fill="#E6E8EB" font-size="20" font-weight="700">DIAGNOSTICS</text>
+      <text x="190" y="49" fill="#A7ADB7" font-size="16">fault analysis · vehicle communication</text>
+
+      <circle cx="5" cy="82" r="4" fill="#E10600" opacity="0.8"/>
+      <text x="24" y="88" fill="#E6E8EB" font-size="20" font-weight="700">RETROFITS</text>
+      <text x="190" y="88" fill="#A7ADB7" font-size="16">OEM integration · coding · datasets</text>
+
+      <circle cx="5" cy="121" r="4" fill="#E10600" opacity="0.6"/>
+      <text x="24" y="127" fill="#E6E8EB" font-size="20" font-weight="700">RESEARCH</text>
+      <text x="190" y="127" fill="#A7ADB7" font-size="16">modules · documentation · tooling</text>
+    </g>
+
+    <g transform="translate(730 68)">
+      <rect width="382" height="158" rx="14" fill="#0D0F13" stroke="#1C2026"/>
+
+      <text x="22" y="30" fill="#6F7682" font-size="12" letter-spacing="1.2">PROTOCOLS</text>
+      <text x="22" y="62" fill="#E6E8EB" font-size="18" font-weight="700">CAN · UDS · ODX · MQB</text>
+
+      <path d="M22 84H360" stroke="#1C2026"/>
+
+      <text x="22" y="112" fill="#6F7682" font-size="12" letter-spacing="1.2">SOFTWARE</text>
+      <text x="22" y="141" fill="#A7ADB7" font-size="15">Next.js · React · TypeScript · Tailwind</text>
+    </g>
+  </g>
+</svg>

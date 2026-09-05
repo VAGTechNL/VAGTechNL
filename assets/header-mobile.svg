@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="470" viewBox="0 0 640 470" role="img" aria-labelledby="title desc">
+<title id="title">VAGTechNL mobile GitHub profile header</title>
+<desc id="desc">Mobile VAGTechNL banner with diagnostics, retrofit and network cues.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07080B"/><stop offset="1" stop-color="#0D0F13"/></linearGradient>
+  <radialGradient id="glow" cx="82%" cy="20%" r="55%"><stop offset="0" stop-color="#E10600" stop-opacity=".16"/><stop offset="1" stop-color="#E10600" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#A7ADB7" stroke-opacity=".045"/></pattern>
+</defs>
+<rect width="640" height="470" rx="28" fill="url(#bg)"/>
+<rect width="640" height="470" rx="28" fill="url(#grid)"/>
+<rect width="640" height="470" rx="28" fill="url(#glow)"/>
+<rect x="1" y="1" width="638" height="468" rx="27" fill="none" stroke="#1C2026" stroke-width="2"/>
+<g font-family="Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+  <g transform="translate(42 36)">
+    <rect width="150" height="34" rx="17" fill="#14171C" stroke="#1C2026"/>
+    <circle cx="18" cy="17" r="4" fill="#E10600"/>
+    <text x="32" y="22" fill="#A7ADB7" font-size="13" font-weight="700" letter-spacing="1.8">VAGTECHNL</text>
+    <text x="0" y="104" fill="#FFFFFF" font-size="54" font-weight="800" letter-spacing="-1.7">VAGTechNL</text>
+    <text x="0" y="142" fill="#A7ADB7" font-size="22">Diagnostics · Retrofits · Coding</text>
+    <text x="0" y="171" fill="#A7ADB7" font-size="22">Research · Software</text>
+    <g transform="translate(0 205)">
+      <rect width="556" height="82" rx="18" fill="#14171C" stroke="#1C2026"/>
+      <rect x="20" y="17" width="4" height="48" rx="2" fill="#E10600"/>
+      <text x="42" y="35" fill="#6F7682" font-size="13" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">PLATFORM STATUS</text>
+      <text x="42" y="60" fill="#E6E8EB" font-size="18" font-weight="650">Knowledge · tooling · community</text>
+    </g>
+    <g transform="translate(0 317)" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+      <rect width="556" height="82" rx="18" fill="#0D0F13" stroke="#1C2026"/>
+      <g stroke="#6F7682" stroke-opacity=".38" stroke-width="2" fill="none"><path d="M108 41H194M278 41H364"/></g>
+      <g stroke="#E10600" stroke-width="2.5"><path d="M194 41H278"/></g>
+      <g text-anchor="middle">
+        <g transform="translate(24 18)"><rect width="84" height="46" rx="12" fill="#14171C" stroke="#252A32"/><text x="42" y="28" fill="#E6E8EB" font-size="15">5F</text></g>
+        <g transform="translate(194 18)"><rect width="84" height="46" rx="12" fill="#14171C" stroke="#E10600" stroke-opacity=".75"/><text x="42" y="28" fill="#FFFFFF" font-size="15">GW</text></g>
+        <g transform="translate(364 18)"><rect width="84" height="46" rx="12" fill="#14171C" stroke="#252A32"/><text x="42" y="28" fill="#E6E8EB" font-size="15">01</text></g>
+        <text x="505" y="48" fill="#FF2A23" font-size="14">CAN / UDS</text>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

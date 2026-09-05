@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450" role="img" aria-labelledby="title desc">
+<title id="title">VAGTechNL projects</title>
+<desc id="desc">Three premium technical cards for Forum, Knowledge Base and Research and Tooling.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07080B"/><stop offset="1" stop-color="#0D0F13"/></linearGradient>
+  <linearGradient id="card" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14171C"/><stop offset="1" stop-color="#0D0F13"/></linearGradient>
+</defs>
+<rect width="1200" height="450" rx="28" fill="url(#bg)"/>
+<rect x="1" y="1" width="1198" height="448" rx="27" fill="none" stroke="#1C2026" stroke-width="2"/>
+<g font-family="Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+  <text x="48" y="58" fill="#6F7682" font-size="13" font-weight="700" letter-spacing="2.2">ACTIVE SYSTEMS</text>
+  <text x="48" y="93" fill="#FFFFFF" font-size="28" font-weight="800">Built as one technical ecosystem</text>
+  <path d="M48 112H1152" stroke="#1C2026"/>
+  <g transform="translate(48 142)">
+    <rect width="344" height="252" rx="20" fill="url(#card)" stroke="#1C2026"/>
+    <rect width="4" height="252" rx="2" fill="#E10600"/>
+    <text x="26" y="40" fill="#6F7682" font-size="13" font-weight="700" letter-spacing="1.7">01 / COMMUNITY</text>
+    <text x="26" y="82" fill="#E6E8EB" font-size="28" font-weight="800">FORUM</text>
+    <g transform="translate(258 28)" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="0" y="0" width="54" height="38" rx="10" stroke="#E10600" stroke-width="2"/><path d="M11 15H43M11 24H34M13 38L9 49L25 38" stroke="#6F7682" stroke-width="2"/></g>
+    <text x="26" y="126" fill="#A7ADB7" font-size="16">Diagnostics, coding and retrofit knowledge</text>
+    <text x="26" y="152" fill="#A7ADB7" font-size="16">built around real-world cases.</text>
+    <path d="M26 181H318" stroke="#1C2026"/>
+    <text x="26" y="214" fill="#6F7682" font-size="12" font-weight="700" letter-spacing="1.5">FOCUS</text>
+    <text x="83" y="214" fill="#E6E8EB" font-size="13">DISCUSS · VERIFY · SHARE</text>
+  </g>
+  <g transform="translate(428 142)">
+    <rect width="344" height="252" rx="20" fill="url(#card)" stroke="#1C2026"/>
+    <rect width="4" height="252" rx="2" fill="#E10600" opacity="0.78"/>
+    <text x="26" y="40" fill="#6F7682" font-size="13" font-weight="700" letter-spacing="1.7">02 / EVIDENCE</text>
+    <text x="26" y="82" fill="#E6E8EB" font-size="24" font-weight="800">KNOWLEDGE BASE</text>
+    <g transform="translate(262 27)" fill="none" stroke-linecap="round"><rect x="0" y="0" width="46" height="54" rx="8" stroke="#6F7682" stroke-width="2"/><path d="M10 14H36M10 25H36M10 36H29" stroke="#A7ADB7" stroke-width="2"/><circle cx="38" cy="45" r="7" stroke="#E10600" stroke-width="2"/></g>
+    <text x="26" y="126" fill="#A7ADB7" font-size="16">Source, evidence, claim and conclusion</text>
+    <text x="26" y="152" fill="#A7ADB7" font-size="16">remain explicitly traceable.</text>
+    <path d="M26 181H318" stroke="#1C2026"/>
+    <text x="26" y="214" fill="#6F7682" font-size="12" font-weight="700" letter-spacing="1.5">FOCUS</text>
+    <text x="83" y="214" fill="#E6E8EB" font-size="13">SOURCE · TRACE · PROVE</text>
+  </g>
+  <g transform="translate(808 142)">
+    <rect width="344" height="252" rx="20" fill="url(#card)" stroke="#1C2026"/>
+    <rect width="4" height="252" rx="2" fill="#E10600" opacity="0.56"/>
+    <text x="26" y="40" fill="#6F7682" font-size="13" font-weight="700" letter-spacing="1.7">03 / ENGINEERING</text>
+    <text x="26" y="82" fill="#E6E8EB" font-size="24" font-weight="800">RESEARCH / TOOLING</text>
+    <g transform="translate(270 28)" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="7" stroke="#E10600" stroke-width="2"/><circle cx="54" cy="8" r="7" stroke="#6F7682" stroke-width="2"/><circle cx="54" cy="48" r="7" stroke="#6F7682" stroke-width="2"/><path d="M25 16L47 10M24 23L47 44" stroke="#A7ADB7" stroke-width="2"/></g>
+    <text x="26" y="126" fill="#A7ADB7" font-size="16">Modules, datasets and protocols.</text>
+    <text x="26" y="152" fill="#A7ADB7" font-size="16">Tooling for reproducible technical work.</text>
+    <path d="M26 181H318" stroke="#1C2026"/>
+    <text x="26" y="214" fill="#6F7682" font-size="12" font-weight="700" letter-spacing="1.5">FOCUS</text>
+    <text x="83" y="214" fill="#E6E8EB" font-size="13">ANALYZE · BUILD · AUTOMATE</text>
+  </g>
+</g>
+</svg>
