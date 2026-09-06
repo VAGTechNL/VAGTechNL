@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/header-mobile.svg">
-    <img src="assets/header.svg" alt="VAGTechNL - Diagnostics, Retrofits, Coding, Module Research and Software" width="100%" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/header-mobile.svg?v=2">
+    <img src="assets/header.svg?v=2" alt="VAGTechNL - Diagnostics, Retrofits, Coding, Module Research and Software" width="100%" />
   </picture>
 </p>
 

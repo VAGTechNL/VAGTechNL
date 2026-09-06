@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
   <title id="title">VAGTechNL GitHub profile header</title>
-  <desc id="desc">Dark technical VAGTechNL banner with red accent, module nodes, diagnostics theme, rotating technical focus and subtle network signal animation.</desc>
+  <desc id="desc">Dark technical VAGTechNL banner with red accent, module nodes, diagnostics theme, rotating technical focus and animated network signals.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#07080B"/>
@@ -21,53 +21,14 @@
     .f2 { animation-delay: 4s; }
     .f3 { animation-delay: 8s; }
     .f4 { animation-delay: 12s; }
-
-    .signal {
-      fill: none;
-      stroke: #FF2A23;
-      stroke-width: 2.5;
-      stroke-linecap: round;
-      stroke-dasharray: 7 42;
-      opacity: 0;
-      animation: signalTravel 1.65s linear infinite, signalGate 16s linear infinite;
-    }
-    .route-a { animation-delay: 0s, 0s; }
-    .route-b { animation-delay: .45s, 0s; }
-    .route-c { animation-delay: .9s, 0s; }
-    .route-d { animation-delay: 0s, -8s; }
-    .route-e { animation-delay: .45s, -8s; }
-
-    .core-node { animation: corePulse 4s ease-in-out infinite; }
-    .core-node-soft { animation: corePulseSoft 4s ease-in-out infinite; animation-delay: .55s; }
-
     @keyframes focusCycle {
       0%, 20% { opacity: 1; }
       24%, 100% { opacity: 0; }
     }
-    @keyframes signalTravel {
-      to { stroke-dashoffset: -49; }
-    }
-    @keyframes signalGate {
-      0%, 3% { opacity: 0; }
-      7%, 19% { opacity: .95; }
-      23%, 49% { opacity: 0; }
-      53%, 65% { opacity: .95; }
-      69%, 100% { opacity: 0; }
-    }
-    @keyframes corePulse {
-      0%, 100% { stroke-opacity: .45; }
-      50% { stroke-opacity: 1; }
-    }
-    @keyframes corePulseSoft {
-      0%, 100% { stroke-opacity: .32; }
-      50% { stroke-opacity: .72; }
-    }
-
     @media (prefers-reduced-motion: reduce) {
       .focus { animation: none; opacity: 0; }
       .f1 { opacity: 1; }
-      .signal { animation: none; opacity: 0; }
-      .core-node, .core-node-soft { animation: none; }
+      .network-motion { display: none; }
     }
   </style>
 
@@ -114,17 +75,45 @@
         <path d="M261 242H287"/>
       </g>
 
-      <g stroke="#E10600" stroke-opacity="0.24" stroke-width="2" fill="none">
-        <path d="M136 128H183"/>
-        <path d="M222 154V211"/>
+      <g class="network-motion" fill="none" stroke="#FF2A23" stroke-width="2.5" stroke-linecap="round">
+        <path d="M136 128H183" stroke-opacity="0.18">
+          <animate attributeName="stroke-opacity" values="0.18;1;1;0.18;0.18" keyTimes="0;0.02;0.09;0.11;1" dur="12s" begin="0s" repeatCount="indefinite"/>
+        </path>
+        <path d="M222 154V211" stroke-opacity="0.18">
+          <animate attributeName="strokke-opacity" values="0.18;1;1;0.18;0.18" keyTimes="0;0.02;0.09;0.11;1" dur="12s" begin="2.4s" repeatCount="indefinite"/>
+        </path>
+        <path d="M183 242H157" stroke-opacity="0.18">
+          <animate attributeName="stroke-opacity" values="0.18;1;1;0.18;0.18" keyTimes="0;0.02;0.09;0.11;1" dur="12s" begin="4.8s" repeatCount="indefinite"/>
+        </path>
+        <path d="M261 128H308" stroke-opacity="0.18">
+          <animate attributeName="stroke-opacity" values="0.18;1;1;0.18;0.18" keyTimes="0;0.02;0.09;0.11;1" dur="12s" begin="7.2s" repeatCount="indefinite"/>
+        </path>
+        <path d="M261 242H287" stroke-opacity="0.18">
+          <animate attributeName="stroke-opacity" values="0.18;1;1;0.18;0.18" keyTimes="0;0.02;0.09;0.11;1" dur="12s" begin="9.6s" repeatCount="indefinite"/>
+        </path>
       </g>
 
-      <g aria-hidden="true">
-        <path class="signal route-a" d="M136 128H183"/>
-        <path class="signal route-b" d="M222 154V211"/>
-        <path class="signal route-c" d="M183 242H157"/>
-        <path class="signal route-d" d="M261 128H308"/>
-        <path class="signal route-e" d="M261 242H287"/>
+      <g class="network-motion" aria-hidden="true" fill="#FF2A23">
+        <circle r="4.2" opacity="0">
+          <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.09;0.11;1" dur="12s" begin="0s" repeatCount="indefinite"/>
+          <animateMotion path="M136 128 L183 128" keyPoints="0;1;1" keyTimes="0;0.1;1" calcMode="linear" dur="12s" begin="0s" repeatCount="indefinite"/>
+        </circle>
+        <circle r="4.2" opacity="0">
+          <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.09;0.11;1" dur="12s" begin="2.4s" repeatCount="indefinite"/>
+          <animateMotion path="M222 154 L222 211" keyPoints="0;1;1" keyTimes="0;0.1;1" calcMode="linear" dur="12s" begin="2.4s" repeatCount="indefinite"/>
+        </circle>
+        <circle r="4.2" opacity="0">
+          <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.09;0.11;1" dur="12s" begin="4.8s" repeatCount="indefinite"/>
+          <animateMotion path="M183 242 L157 242" keyPoints="0;1;1" keyTimes="0;0.1;1" calcMode="linear" dur="12s" begin="4.8s" repeatCount="indefinite"/>
+        </circle>
+        <circle r="4.2" opacity="0">
+          <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.09;0.11;1" dur="12s" begin="7.2s" repeatCount="indefinite"/>
+          <animateMotion path="M261 128 L308 128" keyPoints="0;1;1" keyTimes="0;0.1;1" calcMode="linear" dur="12s" begin="7.2s" repeatCount="indefinite"/>
+        </circle>
+        <circle r="4.2" opacity="0">
+          <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.09;0.11;1" dur="12s" begin="9.6s" repeatCount="indefinite"/>
+          <animateMotion path="M261 242 L287 242" keyPoints="0;1;1" keyTimes="0;0.1;1" calcMode="linear" dur="12s" begin="9.6s" repeatCount="indefinite"/>
+        </circle>
       </g>
 
       <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" text-anchor="middle">
@@ -134,7 +123,9 @@
           <text x="39" y="40" fill="#6F7682" font-size="9">MIB</text>
         </g>
         <g transform="translate(183 102)">
-          <rect class="core-node" width="78" height="52" rx="12" fill="#14171C" stroke="#E10600" stroke-opacity="0.7"/>
+          <rect width="78" height="52" rx="12" fill="#14171C" stroke="#E10600" stroke-opacity="0.7">
+            <animate class="network-motion" attributeName="stroke-opacity" values="0.45;1;0.45" dur="3.6s" repeatCount="indefinite"/>
+          </rect>
           <text x="39" y="24" fill="#E6E8EB">GW</text>
           <text x="39" y="40" fill="#FF2A23" font-size="9">CAN</text>
         </g>
@@ -144,7 +135,9 @@
           <text x="39" y="40" fill="#6F7682" font-size="9">ECU</text>
         </g>
         <g transform="translate(183 211)">
-          <rect class="core-node-soft" width="78" height="52" rx="12" fill="#14171C" stroke="#E10600" stroke-opacity="0.48"/>
+          <rect width="78" height="52" rx="12" fill="#14171C" stroke="#E10600" stroke-opacity="0.48">
+            <animate class="network-motion" attributeName="stroke-opacity" values="0.30;0.82;0.30" dur="3.6s" begin=".55s" repeatCount="indefinite"/>
+          </rect>
           <text x="39" y="24" fill="#E6E8EB">UDS</text>
           <text x="39" y="40" fill="#FF2A23" font-size="9">ODX</text>
         </g>
