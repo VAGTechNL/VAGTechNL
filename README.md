@@ -12,13 +12,6 @@
 
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/signal-mobile.svg">
-    <img src="assets/signal.svg" alt="VAGTechNL profile signal, protocols and rotating technical focus" width="100%" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
     <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/terminal-mobile.svg">
     <img src="assets/terminal.svg" alt="VAGTechNL technical focus, protocols and software stack" width="100%" />
   </picture>

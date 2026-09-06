@@ -1,11 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="470" viewBox="0 0 640 470" role="img" aria-labelledby="title desc">
 <title id="title">VAGTechNL mobile GitHub profile header</title>
-<desc id="desc">Mobile VAGTechNL banner with diagnostics, retrofit and network cues.</desc>
+<desc id="desc">Mobile VAGTechNL banner with diagnostics, retrofit, network cues and rotating technical focus.</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07080B"/><stop offset="1" stop-color="#0D0F13"/></linearGradient>
   <radialGradient id="glow" cx="82%" cy="20%" r="55%"><stop offset="0" stop-color="#E10600" stop-opacity=".16"/><stop offset="1" stop-color="#E10600" stop-opacity="0"/></radialGradient>
   <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#A7ADB7" stroke-opacity=".045"/></pattern>
 </defs>
+<style>
+  .focus { opacity: 0; animation: focusCycle 16s ease-in-out infinite; }
+  .f1 { animation-delay: 0s; opacity: 1; }
+  .f2 { animation-delay: 4s; }
+  .f3 { animation-delay: 8s; }
+  .f4 { animation-delay: 12s; }
+  @keyframes focusCycle { 0%, 20% { opacity: 1; } 24%, 100% { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) {
+    .focus { animation: none; opacity: 0; }
+    .f1 { opacity: 1; }
+  }
+</style>
 <rect width="640" height="470" rx="28" fill="url(#bg)"/>
 <rect width="640" height="470" rx="28" fill="url(#grid)"/>
 <rect width="640" height="470" rx="28" fill="url(#glow)"/>
@@ -21,8 +33,13 @@
     <g transform="translate(0 205)">
       <rect width="556" height="82" rx="18" fill="#14171C" stroke="#1C2026"/>
       <rect x="20" y="17" width="4" height="48" rx="2" fill="#E10600"/>
-      <text x="42" y="35" fill="#6F7682" font-size="13" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">PLATFORM STATUS</text>
-      <text x="42" y="60" fill="#E6E8EB" font-size="18" font-weight="650">Knowledge · tooling · community</text>
+      <text x="42" y="35" fill="#6F7682" font-size="13" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">ACTIVE FOCUS</text>
+      <g transform="translate(42 61)" fill="#E6E8EB" font-size="18" font-weight="650">
+        <text class="focus f1">Diagnostics &amp; vehicle communication</text>
+        <text class="focus f2">OEM retrofits, coding &amp; datasets</text>
+        <text class="focus f3">CAN · UDS · ODX · MQB</text>
+        <text class="focus f4">Evidence-driven research &amp; tooling</text>
+      </g>
     </g>
     <g transform="translate(0 317)" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
       <rect width="556" height="82" rx="18" fill="#0D0F13" stroke="#1C2026"/>
