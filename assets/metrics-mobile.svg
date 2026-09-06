@@ -16,40 +16,43 @@
     <text x="0" y="66" fill="#A7ADB7" font-size="15">Daily refresh · public data only.</text>
 
     <g transform="translate(0 98)">
-      <g>
+
+      <g transform="translate(0 0)">
         <rect width="270" height="118" rx="14" fill="url(#panel)" stroke="#1C2026"/>
         <rect width="6" height="118" rx="3" fill="#E10600"/>
-        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.2">PUBLIC REPOS</text>
+        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.05">PUBLIC REPOS</text>
         <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">1</text>
       </g>
+
       <g transform="translate(286 0)">
         <rect width="290" height="118" rx="14" fill="url(#panel)" stroke="#1C2026"/>
         <rect width="6" height="118" rx="3" fill="#E10600"/>
-        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.2">FOLLOWERS</text>
-        <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">—</text>
+        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.05">FOLLOWERS</text>
+        <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">4</text>
       </g>
+
       <g transform="translate(0 134)">
         <rect width="270" height="118" rx="14" fill="url(#panel)" stroke="#1C2026"/>
         <rect width="6" height="118" rx="3" fill="#E10600"/>
-        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.2">TOTAL STARS</text>
-        <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">—</text>
+        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.05">TOTAL STARS</text>
+        <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">5</text>
       </g>
+
       <g transform="translate(286 134)">
         <rect width="290" height="118" rx="14" fill="url(#panel)" stroke="#1C2026"/>
         <rect width="6" height="118" rx="3" fill="#E10600"/>
-        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.1">PUBLIC EVENTS · 30D</text>
-        <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">—</text>
+        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.05">PUBLIC EVENTS · 30D</text>
+        <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">37</text>
       </g>
     </g>
 
     <g transform="translate(0 380)">
       <text x="0" y="0" fill="#6F7682" font-size="12" letter-spacing="1.2">PUBLIC CODE MIX</text>
       <rect x="0" y="20" width="576" height="14" rx="7" fill="#1C2026"/>
-      <text x="0" y="70" fill="#A7ADB7" font-size="14">Awaiting first daily refresh.</text>
-      <text x="0" y="94" fill="#6F7682" font-size="12">Profile repository excluded from code mix.</text>
+      <text x="0" y="70" fill="#A7ADB7" font-size="14">No public code repositories indexed yet.</text><text x="0" y="94" fill="#6F7682" font-size="12">Profile repository excluded from code mix.</text>
       <path d="M0 120H576" stroke="#1C2026"/>
       <text x="0" y="151" fill="#6F7682" font-size="11">SOURCE · GitHub public API</text>
-      <text x="0" y="178" fill="#6F7682" font-size="11">UPDATED · PENDING FIRST REFRESH</text>
+      <text x="0" y="178" fill="#6F7682" font-size="11">UPDATED · 2026-09-06 21:02 UTC</text>
     </g>
   </g>
 </svg>
