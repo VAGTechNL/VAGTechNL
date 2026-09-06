@@ -70,6 +70,25 @@
       <circle r="4.5" opacity="0"><animate attributeName="opacity" dur="30s" repeatCount="indefinite" values="0;0;.82;.82;0;0" keyTimes="0;.75;.76;.79;.8;1"/><animateMotion dur="30s" repeatCount="indefinite" path="M736 55 L788 55" keyPoints="0;0;1;1" keyTimes="0;.75;.795;1" calcMode="linear"/></circle>
     </g>
 
+    <g class="flow-motion" fill="none" stroke="#FF2A23" stroke-width="1.5" pointer-events="none">
+      <circle cx="176" cy="55" r="5" opacity="0">
+        <animate attributeName="r" dur="30s" repeatCount="indefinite" values="5;5;10.5;12.5;12.5" keyTimes="0;.168;.178;.198;1"/>
+        <animate attributeName="opacity" dur="30s" repeatCount="indefinite" values="0;0;.26;0;0" keyTimes="0;.168;.178;.198;1"/>
+      </circle>
+      <circle cx="348" cy="55" r="5" opacity="0">
+        <animate attributeName="r" dur="30s" repeatCount="indefinite" values="5;5;10.5;12.5;12.5" keyTimes="0;.368;.378;.398;1"/>
+        <animate attributeName="opacity" dur="30s" repeatCount="indefinite" values="0;0;.26;0;0" keyTimes="0;.368;.378;.398;1"/>
+      </circle>
+      <circle cx="540" cy="55" r="5" opacity="0">
+        <animate attributeName="r" dur="30s" repeatCount="indefinite" values="5;5;10.5;12.5;12.5" keyTimes="0;.568;.578;.598;1"/>
+        <animate attributeName="opacity" dur="30s" repeatCount="indefinite" values="0;0;.26;0;0" keyTimes="0;.568;.578;.598;1"/>
+      </circle>
+      <circle cx="762" cy="55" r="5" opacity="0">
+        <animate attributeName="r" dur="30s" repeatCount="indefinite" values="5;5;10.5;12.5;12.5" keyTimes="0;.768;.778;.798;1"/>
+        <animate attributeName="opacity" dur="30s" repeatCount="indefinite" values="0;0;.26;0;0" keyTimes="0;.768;.778;.798;1"/>
+      </circle>
+    </g>
+
     <g transform="translate(0 148)">
       <path d="M0 0H1092" stroke="#1C2026"/>
       <text x="0" y="32" fill="#E10600" font-size="12" font-weight="800" letter-spacing="1.7">RULE</text>

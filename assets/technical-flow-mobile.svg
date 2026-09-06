@@ -56,6 +56,25 @@
       <circle r="5" opacity="0"><animate attributeName="opacity" dur="30s" repeatCount="indefinite" values="0;0;.82;.82;0;0" keyTimes="0;.55;.56;.59;.6;1"/><animateMotion dur="30s" repeatCount="indefinite" path="M238 380 L238 408" keyPoints="0;0;1;1" keyTimes="0;.55;.595;1" calcMode="linear"/></circle>
       <circle r="5" opacity="0"><animate attributeName="opacity" dur="30s" repeatCount="indefinite" values="0;0;.82;.82;0;0" keyTimes="0;.75;.76;.79;.8;1"/><animateMotion dur="30s" repeatCount="indefinite" path="M238 516 L238 544" keyPoints="0;0;1;1" keyTimes="0;.75;.795;1" calcMode="linear"/></circle>
     </g>
+
+    <g class="flow-motion" fill="none" stroke="#FF2A23" stroke-width="1.5" pointer-events="none">
+      <circle cx="238" cy="122" r="5" opacity="0">
+        <animate attributeName="r" dur="30s" repeatCount="indefinite" values="5;5;11;13;13" keyTimes="0;.168;.178;.198;1"/>
+        <animate attributeName="opacity" dur="30s" repeatCount="indefinite" values="0;0;.26;0;0" keyTimes="0;.168;.178;.198;1"/>
+      </circle>
+      <circle cx="238" cy="258" r="5" opacity="0">
+        <animate attributeName="r" dur="30s" repeatCount="indefinite" values="5;5;11;13;13" keyTimes="0;.368;.378;.398;1"/>
+        <animate attributeName="opacity" dur="30s" repeatCount="indefinite" values="0;0;.26;0;0" keyTimes="0;.368;.378;.398;1"/>
+      </circle>
+      <circle cx="238" cy="394" r="5" opacity="0">
+        <animate attributeName="r" dur="30s" repeatCount="indefinite" values="5;5;11;13;13" keyTimes="0;.568;.578;.598;1"/>
+        <animate attributeName="opacity" dur="30s" repeatCount="indefinite" values="0;0;.26;0;0" keyTimes="0;.568;.578;.598;1"/>
+      </circle>
+      <circle cx="238" cy="530" r="5" opacity="0">
+        <animate attributeName="r" dur="30s" repeatCount="indefinite" values="5;5;11;13;13" keyTimes="0;.768;.778;.798;1"/>
+        <animate attributeName="opacity" dur="30s" repeatCount="indefinite" values="0;0;.26;0;0" keyTimes="0;.768;.778;.798;1"/>
+      </circle>
+    </g>
   </g>
 
   <g transform="translate(36 826)">
