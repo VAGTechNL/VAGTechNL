@@ -28,8 +28,8 @@
 <a name="technical-flow"></a>
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/technical-flow-mobile.svg">
-    <img src="assets/technical-flow.svg" alt="VAGTechNL technical flow from vehicle data to evidence and tooling" width="100%" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/technical-flow-mobile.svg?v=2">
+    <img src="assets/technical-flow.svg?v=2" alt="VAGTechNL technical flow from vehicle data to evidence and tooling" width="100%" />
   </picture>
 </p>
 

@@ -1,10 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
 <title id="title">VAGTechNL technical flow</title>
-<desc id="desc">Technical flow from vehicle data through gateway and protocols into evidence, knowledge and tooling.</desc>
+<desc id="desc">Technical flow from vehicle data through gateway and protocols into evidence, knowledge and tooling, with a slow sequential pulse.</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07080B"/><stop offset="1" stop-color="#0D0F13"/></linearGradient>
   <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#A7ADB7" stroke-opacity="0.045"/></pattern>
 </defs>
+<style>
+  @media (prefers-reduced-motion: reduce) { .flow-motion { display: none; } }
+</style>
 <rect width="1200" height="390" rx="28" fill="url(#bg)"/>
 <rect width="1200" height="390" rx="28" fill="url(#grid)"/>
 <rect x="1" y="1" width="1198" height="388" rx="27" fill="none" stroke="#1C2026" stroke-width="2"/>
@@ -50,6 +53,21 @@
       <text x="806" y="29" fill="#6F7682" font-size="11" font-weight="700" letter-spacing="1.4">OUTPUT</text>
       <text x="806" y="58" fill="#E6E8EB" font-size="20" font-weight="800">KNOWLEDGE + TOOLING</text>
       <text x="806" y="84" fill="#A7ADB7" font-size="12">traceable · reusable · testable</text>
+    </g>
+
+    <g class="flow-motion" fill="none" stroke="#FF2A23" stroke-width="2.4" pointer-events="none">
+      <rect x="0" y="0" width="150" height="110" rx="17" opacity="0"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" values="0;.78;.16;.78;.16;.78;0;0" keyTimes="0;.02;.055;.09;.125;.16;.19;1"/></rect>
+      <rect x="202" y="0" width="120" height="110" rx="17" opacity="0"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" values="0;0;.78;.16;.78;.16;.78;0;0" keyTimes="0;.2;.22;.255;.29;.325;.36;.39;1"/></rect>
+      <rect x="374" y="0" width="140" height="110" rx="17" opacity="0"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" values="0;0;.78;.16;.78;.16;.78;0;0" keyTimes="0;.4;.42;.455;.49;.525;.56;.59;1"/></rect>
+      <rect x="566" y="0" width="170" height="110" rx="17" opacity="0"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" values="0;0;.78;.16;.78;.16;.78;0;0" keyTimes="0;.6;.62;.655;.69;.725;.76;.79;1"/></rect>
+      <rect x="788" y="0" width="304" height="110" rx="17" opacity="0"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" values="0;0;.78;.16;.78;.16;.78;0;0" keyTimes="0;.8;.82;.855;.89;.925;.96;.99;1"/></rect>
+    </g>
+
+    <g class="flow-motion" fill="#FF2A23" pointer-events="none">
+      <circle r="5" opacity="0"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;.155;.16;.195;.2;1"/><animateMotion dur="20s" repeatCount="indefinite" path="M150 55 L202 55" keyPoints="0;0;1;1" keyTimes="0;.155;.195;1" calcMode="linear"/></circle>
+      <circle r="5" opacity="0"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;.355;.36;.395;.4;1"/><animateMotion dur="20s" repeatCount="indefinite" path="M322 55 L374 55" keyPoints="0;0;1;1" keyTimes="0;.355;.395;1" calcMode="linear"/></circle>
+      <circle r="5" opacity="0"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;.555;.56;.595;.6;1"/><animateMotion dur="20s" repeatCount="indefinite" path="M514 55 L566 55" keyPoints="0;0;1;1" keyTimes="0;.555;.595;1" calcMode="linear"/></circle>
+      <circle r="5" opacity="0"><animate attributeName="opacity" dur="20s" repeatCount="indefinite" values="0;0;1;1;0;0" keyTimes="0;.755;.76;.795;.8;1"/><animateMotion dur="20s" repeatCount="indefinite" path="M736 55 L788 55" keyPoints="0;0;1;1" keyTimes="0;.755;.795;1" calcMode="linear"/></circle>
     </g>
 
     <g transform="translate(0 148)">
