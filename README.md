@@ -52,8 +52,8 @@
 <a name="metrics"></a>
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/metrics-mobile.svg">
-    <img src="assets/metrics.svg" alt="VAGTechNL public GitHub profile telemetry, refreshed daily" width="100%" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/metrics-mobile.svg?v=2">
+    <img src="assets/metrics.svg?v=2" alt="VAGTechNL public GitHub profile telemetry, refreshed daily" width="100%" />
   </picture>
 </p>
 

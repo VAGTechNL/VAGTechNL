@@ -17,7 +17,6 @@ from urllib.error import HTTPError, URLError
 from urllib.parse import quote
 from urllib.request import Request, urlopen
 
-
 API = "https://api.github.com"
 LOGIN = os.environ.get("PROFILE_LOGIN", "VAGTechNL")
 TOKEN = os.environ.get("GITHUB_TOKEN", "")
@@ -40,10 +39,10 @@ COLORS = {
 
 LANGUAGE_COLORS = [
     COLORS["red"],
-    COLORS["red_dark"],
     COLORS["red_bright"],
     COLORS["secondary"],
     COLORS["muted"],
+    COLORS["active"],
 ]
 
 
@@ -99,7 +98,7 @@ def fetch_public_events_30d(now: dt.datetime) -> str:
         if not batch:
             break
 
-        oldest_in_window = True
+        all_in_window = True
         for event in batch:
             created_raw = event.get("created_at")
             if not created_raw:
@@ -108,9 +107,9 @@ def fetch_public_events_30d(now: dt.datetime) -> str:
             if created >= cutoff:
                 count += 1
             else:
-                oldest_in_window = False
+                all_in_window = False
 
-        if len(batch) < 100 or not oldest_in_window:
+        if len(batch) < 100 or not all_in_window:
             break
         if page == 3:
             capped = True
@@ -138,7 +137,6 @@ def fetch_language_mix(repos: list[dict[str, Any]]) -> list[tuple[str, float]]:
         try:
             language_data = request_json(str(languages_url))
         except RuntimeError:
-            # One repository should not blank the whole public profile.
             continue
 
         if not isinstance(language_data, dict):
@@ -156,9 +154,7 @@ def fetch_language_mix(repos: list[dict[str, Any]]) -> list[tuple[str, float]]:
     top = ordered[:4]
     remainder = sum(value for _, value in ordered[4:])
 
-    result: list[tuple[str, float]] = [
-        (name, value / total_bytes * 100.0) for name, value in top
-    ]
+    result = [(name, value / total_bytes * 100.0) for name, value in top]
     if remainder:
         result.append(("Other", remainder / total_bytes * 100.0))
     return result
@@ -168,23 +164,42 @@ def esc(value: object) -> str:
     return html.escape(str(value), quote=True)
 
 
-def metric_card(x: int, label: str, value: str, width: int = 266) -> str:
+def live_indicator(x: int, y: int) -> str:
     return f"""
-      <g transform="translate({x} 0)">
-        <rect width="{width}" height="102" rx="14" fill="url(#panel)" stroke="{COLORS['border']}"/>
-        <rect width="5" height="102" rx="2.5" fill="{COLORS['red']}"/>
-        <text x="22" y="29" fill="{COLORS['muted']}" font-size="11" letter-spacing="1.2">{esc(label)}</text>
-        <text x="22" y="72" fill="{COLORS['strong']}" font-size="34" font-weight="700">{esc(value)}</text>
+      <g transform="translate({x} {y})" class="signal-motion">
+        <circle cx="0" cy="0" r="4" fill="{COLORS['red_bright']}" opacity=".90"/>
+        <circle cx="0" cy="0" r="4" fill="none" stroke="{COLORS['red_bright']}" stroke-width="1.2" opacity="0">
+          <animate attributeName="r" dur="5.5s" repeatCount="indefinite" values="4;4;11;14" keyTimes="0;.15;.32;1"/>
+          <animate attributeName="opacity" dur="5.5s" repeatCount="indefinite" values="0;.28;.12;0" keyTimes="0;.15;.32;1"/>
+        </circle>
       </g>"""
 
 
-def metric_card_mobile(x: int, y: int, label: str, value: str, width: int) -> str:
+def metric_card(x: int, label: str, value: str, width: int = 266) -> str:
+    return f"""
+      <g transform="translate({x} 0)">
+        <rect width="{width}" height="96" rx="14" fill="url(#card)" stroke="{COLORS['border']}"/>
+        <path d="M18 1H54" stroke="{COLORS['red']}" stroke-width="2" stroke-linecap="round" opacity=".90"/>
+        <circle cx="22" cy="28" r="3" fill="{COLORS['red_bright']}" opacity=".75"/>
+        <text x="34" y="32" class="mono" fill="{COLORS['muted']}" font-size="10.5" letter-spacing="1.15">{esc(label)}</text>
+        <text x="20" y="72" fill="{COLORS['strong']}" font-size="31" font-weight="760">{esc(value)}</text>
+      </g>"""
+
+
+def metric_card_mobile(
+    x: int,
+    y: int,
+    label: str,
+    value: str,
+    width: int,
+) -> str:
     return f"""
       <g transform="translate({x} {y})">
-        <rect width="{width}" height="118" rx="14" fill="url(#panel)" stroke="{COLORS['border']}"/>
-        <rect width="6" height="118" rx="3" fill="{COLORS['red']}"/>
-        <text x="22" y="34" fill="{COLORS['muted']}" font-size="12" letter-spacing="1.05">{esc(label)}</text>
-        <text x="22" y="83" fill="{COLORS['strong']}" font-size="38" font-weight="700">{esc(value)}</text>
+        <rect width="{width}" height="112" rx="15" fill="url(#card)" stroke="{COLORS['border']}"/>
+        <path d="M18 1H58" stroke="{COLORS['red']}" stroke-width="2" stroke-linecap="round" opacity=".90"/>
+        <circle cx="22" cy="32" r="3" fill="{COLORS['red_bright']}" opacity=".75"/>
+        <text x="34" y="36" class="mono" fill="{COLORS['muted']}" font-size="11" letter-spacing="1.05">{esc(label)}</text>
+        <text x="20" y="84" fill="{COLORS['strong']}" font-size="36" font-weight="760">{esc(value)}</text>
       </g>"""
 
 
@@ -195,17 +210,19 @@ def language_track(
     width: int,
     height: int,
 ) -> tuple[str, list[tuple[str, float, str]]]:
-    if not mix:
-        return (
-            f'<rect x="{x}" y="{y}" width="{width}" height="{height}" '
-            f'rx="{height / 2:g}" fill="{COLORS["border"]}"/>',
-            [],
-        )
-
-    pieces = [
+    base = (
         f'<rect x="{x}" y="{y}" width="{width}" height="{height}" '
         f'rx="{height / 2:g}" fill="{COLORS["border"]}"/>'
-    ]
+    )
+    if not mix:
+        shimmer = f"""
+      <rect x="{x}" y="{y}" width="72" height="{height}" rx="{height / 2:g}" fill="{COLORS['active']}" opacity=".7" class="signal-motion">
+        <animate attributeName="x" dur="7s" repeatCount="indefinite" values="{x};{x + width - 72};{x}" keyTimes="0;.5;1"/>
+        <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values=".18;.48;.18" keyTimes="0;.5;1"/>
+      </rect>"""
+        return base + shimmer, []
+
+    pieces = [base]
     cursor = float(x)
     rendered: list[tuple[str, float, str]] = []
 
@@ -218,12 +235,51 @@ def language_track(
             continue
         pieces.append(
             f'<rect x="{cursor:.2f}" y="{y}" width="{segment_width:.2f}" '
-            f'height="{height}" fill="{color}"/>'
+            f'height="{height}" rx="{height / 2:g}" fill="{color}"/>'
         )
         rendered.append((name, percentage, color))
         cursor += segment_width
 
     return "\n      ".join(pieces), rendered
+
+
+def code_mix_desktop(mix: list[tuple[str, float]]) -> tuple[str, str]:
+    track, legend = language_track(mix, 0, 22, 1124, 8)
+    if not legend:
+        copy = f"""
+      <text x="0" y="60" fill="{COLORS['primary']}" font-size="13.5">No public code repositories yet.</text>
+      <text x="0" y="82" class="mono" fill="{COLORS['muted']}" font-size="10.5">PROFILE REPOSITORY EXCLUDED · MIX STARTS AUTOMATICALLY WITH THE NEXT PUBLIC CODE REPO</text>"""
+        return track, copy
+
+    legend_parts = []
+    x = 0
+    for name, percentage, color in legend:
+        legend_parts.append(
+            f'<circle cx="{x + 4}" cy="63" r="4" fill="{color}"/>'
+            f'<text x="{x + 16}" y="67" fill="{COLORS["secondary"]}" font-size="12.5">'
+            f'{esc(name)} · {percentage:.1f}%</text>'
+        )
+        x += 205
+    return track, "\n      ".join(legend_parts)
+
+
+def code_mix_mobile(mix: list[tuple[str, float]]) -> tuple[str, str, int]:
+    track, legend = language_track(mix, 0, 22, 576, 9)
+    if not legend:
+        copy = f"""
+      <text x="0" y="68" fill="{COLORS['primary']}" font-size="14">No public code repositories yet.</text>
+      <text x="0" y="93" class="mono" fill="{COLORS['muted']}" font-size="10.5">PROFILE REPO EXCLUDED · AUTO-STARTS WITH THE NEXT PUBLIC CODE REPO</text>"""
+        return track, copy, 120
+
+    positions = [(0, 70), (288, 70), (0, 99), (288, 99), (0, 128)]
+    legend_parts = []
+    for (name, percentage, color), (x, y) in zip(legend, positions):
+        legend_parts.append(
+            f'<circle cx="{x + 5}" cy="{y - 5}" r="4" fill="{color}"/>'
+            f'<text x="{x + 17}" y="{y}" fill="{COLORS["secondary"]}" font-size="12.5">'
+            f'{esc(name)} · {percentage:.1f}%</text>'
+        )
+    return track, "\n      ".join(legend_parts), 150
 
 
 def render_desktop(
@@ -234,57 +290,53 @@ def render_desktop(
     mix: list[tuple[str, float]],
     updated: str,
 ) -> str:
-    track, legend = language_track(mix, 0, 18, 1124, 12)
-
-    if legend:
-        legend_parts = []
-        x = 0
-        for name, percentage, color in legend:
-            legend_parts.append(
-                f'<circle cx="{x + 5}" cy="57" r="5" fill="{color}"/>'
-                f'<text x="{x + 18}" y="62" fill="{COLORS["secondary"]}" '
-                f'font-size="13">{esc(name)} · {percentage:.1f}%</text>'
-            )
-            x += 210
-        code_mix_text = "\n      ".join(legend_parts)
-    else:
-        code_mix_text = (
-            f'<text x="0" y="58" fill="{COLORS["secondary"]}" font-size="14">'
-            "No public code repositories indexed yet. Profile repository is excluded."
-            "</text>"
-        )
+    track, code_mix = code_mix_desktop(mix)
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
   <title id="title">VAGTechNL GitHub telemetry</title>
   <desc id="desc">Daily refreshed public GitHub profile metrics.</desc>
   <defs>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="{COLORS['canvas']}"/>
+      <stop offset="1" stop-color="{COLORS['panel']}"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="{COLORS['panel']}"/>
       <stop offset="1" stop-color="{COLORS['card']}"/>
     </linearGradient>
+    <style>
+      .sans{{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}}
+      .mono{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}
+      @media (prefers-reduced-motion: reduce){{.signal-motion{{display:none}}}}
+    </style>
   </defs>
-  <rect width="1200" height="360" rx="24" fill="{COLORS['canvas']}"/>
+
+  <rect width="1200" height="360" rx="24" fill="url(#surface)"/>
   <rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="{COLORS['border']}" stroke-width="2"/>
+  <path d="M38 1H150" stroke="{COLORS['red']}" stroke-width="2" stroke-linecap="round" opacity=".72"/>
 
-  <g transform="translate(38 32)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <text x="0" y="0" fill="{COLORS['muted']}" font-size="12" letter-spacing="1.8">LIVE GITHUB SIGNAL</text>
-    <text x="0" y="31" fill="{COLORS['strong']}" font-size="24" font-weight="700">Public profile telemetry</text>
-    <text x="0" y="55" fill="{COLORS['secondary']}" font-size="14">Refreshed daily by GitHub Actions · public data only.</text>
+  <g transform="translate(38 30)" class="sans">
+    {live_indicator(4, 4)}
+    <text x="18" y="8" class="mono" fill="{COLORS['muted']}" font-size="11" letter-spacing="1.65">PUBLIC GITHUB SIGNAL</text>
+    <text x="0" y="43" fill="{COLORS['strong']}" font-size="23" font-weight="760">Profile telemetry</text>
+    <text x="0" y="67" fill="{COLORS['secondary']}" font-size="13.5">Daily public snapshot · generated by GitHub Actions</text>
 
-    <g transform="translate(0 82)">
-{metric_card(0, "PUBLIC REPOS", public_repos)}
-{metric_card(286, "FOLLOWERS", followers)}
-{metric_card(572, "TOTAL STARS", stars)}
-{metric_card(858, "PUBLIC EVENTS · 30D", events)}
+    <g transform="translate(0 91)">
+      {metric_card(0, "PUBLIC REPOS", public_repos)}
+      {metric_card(286, "FOLLOWERS", followers)}
+      {metric_card(572, "TOTAL STARS", stars)}
+      {metric_card(858, "PUBLIC EVENTS · 30D", events)}
     </g>
 
-    <g transform="translate(0 214)">
-      <text x="0" y="0" fill="{COLORS['muted']}" font-size="11" letter-spacing="1.2">PUBLIC CODE MIX</text>
+    <g transform="translate(0 217)">
+      <text x="0" y="0" class="mono" fill="{COLORS['muted']}" font-size="10.5" letter-spacing="1.15">PUBLIC CODE MIX</text>
+      <text x="1124" y="0" class="mono" fill="{COLORS['muted']}" font-size="10" text-anchor="end">PROFILE REPO EXCLUDED</text>
       {track}
-      {code_mix_text}
-      <path d="M0 78H1124" stroke="{COLORS['border']}"/>
-      <text x="0" y="105" fill="{COLORS['muted']}" font-size="11">SOURCE · GitHub public API</text>
-      <text x="1124" y="105" fill="{COLORS['muted']}" font-size="11" text-anchor="end">UPDATED · {esc(updated)}</text>
+      {code_mix}
+
+      <path d="M0 96H1124" stroke="{COLORS['border']}"/>
+      <text x="0" y="121" class="mono" fill="{COLORS['muted']}" font-size="10">GITHUB PUBLIC API · DAILY 04:23 UTC</text>
+      <text x="1124" y="121" class="mono" fill="{COLORS['muted']}" font-size="10" text-anchor="end">UPDATED · {esc(updated)}</text>
     </g>
   </g>
 </svg>"""
@@ -298,65 +350,56 @@ def render_mobile(
     mix: list[tuple[str, float]],
     updated: str,
 ) -> str:
-    track, legend = language_track(mix, 0, 20, 576, 14)
+    track, code_mix, divider_y = code_mix_mobile(mix)
+    source_y = divider_y + 27
+    updated_y = source_y + 24
+    total_height = max(650, 430 + updated_y + 28)
 
-    if legend:
-        legend_parts = []
-        positions = [(0, 70), (288, 70), (0, 98), (288, 98), (0, 126)]
-        for (name, percentage, color), (x, y) in zip(legend, positions):
-            legend_parts.append(
-                f'<circle cx="{x + 6}" cy="{y - 5}" r="5" fill="{color}"/>'
-                f'<text x="{x + 20}" y="{y}" fill="{COLORS["secondary"]}" '
-                f'font-size="13">{esc(name)} · {percentage:.1f}%</text>'
-            )
-        code_mix_text = "\n      ".join(legend_parts)
-        divider_y = 150
-        source_y = 181
-        updated_y = 208
-    else:
-        code_mix_text = (
-            f'<text x="0" y="70" fill="{COLORS["secondary"]}" font-size="14">'
-            "No public code repositories indexed yet."
-            "</text>"
-            f'<text x="0" y="94" fill="{COLORS["muted"]}" font-size="12">'
-            "Profile repository excluded from code mix."
-            "</text>"
-        )
-        divider_y = 120
-        source_y = 151
-        updated_y = 178
-
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="640" height="650" viewBox="0 0 640 650" role="img" aria-labelledby="title desc">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="640" height="{total_height}" viewBox="0 0 640 {total_height}" role="img" aria-labelledby="title desc">
   <title id="title">VAGTechNL GitHub telemetry</title>
   <desc id="desc">Mobile daily refreshed public GitHub profile metrics.</desc>
   <defs>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="{COLORS['canvas']}"/>
+      <stop offset="1" stop-color="{COLORS['panel']}"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="{COLORS['panel']}"/>
       <stop offset="1" stop-color="{COLORS['card']}"/>
     </linearGradient>
+    <style>
+      .sans{{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}}
+      .mono{{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}}
+      @media (prefers-reduced-motion: reduce){{.signal-motion{{display:none}}}}
+    </style>
   </defs>
-  <rect width="640" height="650" rx="24" fill="{COLORS['canvas']}"/>
-  <rect x="1" y="1" width="638" height="648" rx="23" fill="none" stroke="{COLORS['border']}" stroke-width="2"/>
 
-  <g transform="translate(32 32)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <text x="0" y="0" fill="{COLORS['muted']}" font-size="13" letter-spacing="1.8">LIVE GITHUB SIGNAL</text>
-    <text x="0" y="37" fill="{COLORS['strong']}" font-size="27" font-weight="700">Public profile telemetry</text>
-    <text x="0" y="66" fill="{COLORS['secondary']}" font-size="15">Daily refresh · public data only.</text>
+  <rect width="640" height="{total_height}" rx="24" fill="url(#surface)"/>
+  <rect x="1" y="1" width="638" height="{total_height - 2}" rx="23" fill="none" stroke="{COLORS['border']}" stroke-width="2"/>
+  <path d="M32 1H132" stroke="{COLORS['red']}" stroke-width="2" stroke-linecap="round" opacity=".72"/>
 
-    <g transform="translate(0 98)">
-{metric_card_mobile(0, 0, "PUBLIC REPOS", public_repos, 270)}
-{metric_card_mobile(286, 0, "FOLLOWERS", followers, 290)}
-{metric_card_mobile(0, 134, "TOTAL STARS", stars, 270)}
-{metric_card_mobile(286, 134, "PUBLIC EVENTS · 30D", events, 290)}
+  <g transform="translate(32 30)" class="sans">
+    {live_indicator(4, 4)}
+    <text x="18" y="8" class="mono" fill="{COLORS['muted']}" font-size="12" letter-spacing="1.55">PUBLIC GITHUB SIGNAL</text>
+    <text x="0" y="47" fill="{COLORS['strong']}" font-size="28" font-weight="760">Profile telemetry</text>
+    <text x="0" y="76" fill="{COLORS['secondary']}" font-size="15">Daily public snapshot · GitHub Actions</text>
+
+    <g transform="translate(0 108)">
+      {metric_card_mobile(0, 0, "PUBLIC REPOS", public_repos, 272)}
+      {metric_card_mobile(288, 0, "FOLLOWERS", followers, 288)}
+      {metric_card_mobile(0, 130, "TOTAL STARS", stars, 272)}
+      {metric_card_mobile(288, 130, "PUBLIC EVENTS · 30D", events, 288)}
     </g>
 
-    <g transform="translate(0 380)">
-      <text x="0" y="0" fill="{COLORS['muted']}" font-size="12" letter-spacing="1.2">PUBLIC CODE MIX</text>
+    <g transform="translate(0 384)">
+      <text x="0" y="0" class="mono" fill="{COLORS['muted']}" font-size="11" letter-spacing="1.1">PUBLIC CODE MIX</text>
+      <text x="576" y="0" class="mono" fill="{COLORS['muted']}" font-size="10" text-anchor="end">PROFILE REPO EXCLUDED</text>
       {track}
-      {code_mix_text}
+      {code_mix}
+
       <path d="M0 {divider_y}H576" stroke="{COLORS['border']}"/>
-      <text x="0" y="{source_y}" fill="{COLORS['muted']}" font-size="11">SOURCE · GitHub public API</text>
-      <text x="0" y="{updated_y}" fill="{COLORS['muted']}" font-size="11">UPDATED · {esc(updated)}</text>
+      <text x="0" y="{source_y}" class="mono" fill="{COLORS['muted']}" font-size="10">GITHUB PUBLIC API · DAILY 04:23 UTC</text>
+      <text x="0" y="{updated_y}" class="mono" fill="{COLORS['muted']}" font-size="10">UPDATED · {esc(updated)}</text>
     </g>
   </g>
 </svg>"""
