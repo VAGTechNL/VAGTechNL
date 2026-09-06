@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="650" viewBox="0 0 640 650" role="img" aria-labelledby="title desc">
+  <title id="title">VAGTechNL GitHub telemetry</title>
+  <desc id="desc">Mobile daily refreshed public GitHub profile metrics.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D0F13"/>
+      <stop offset="1" stop-color="#14171C"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="650" rx="24" fill="#07080B"/>
+  <rect x="1" y="1" width="638" height="648" rx="23" fill="none" stroke="#1C2026" stroke-width="2"/>
+
+  <g transform="translate(32 32)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="0" y="0" fill="#6F7682" font-size="13" letter-spacing="1.8">LIVE GITHUB SIGNAL</text>
+    <text x="0" y="37" fill="#FFFFFF" font-size="27" font-weight="700">Public profile telemetry</text>
+    <text x="0" y="66" fill="#A7ADB7" font-size="15">Daily refresh · public data only.</text>
+
+    <g transform="translate(0 98)">
+      <g>
+        <rect width="270" height="118" rx="14" fill="url(#panel)" stroke="#1C2026"/>
+        <rect width="6" height="118" rx="3" fill="#E10600"/>
+        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.2">PUBLIC REPOS</text>
+        <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">1</text>
+      </g>
+      <g transform="translate(286 0)">
+        <rect width="290" height="118" rx="14" fill="url(#panel)" stroke="#1C2026"/>
+        <rect width="6" height="118" rx="3" fill="#E10600"/>
+        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.2">FOLLOWERS</text>
+        <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">—</text>
+      </g>
+      <g transform="translate(0 134)">
+        <rect width="270" height="118" rx="14" fill="url(#panel)" stroke="#1C2026"/>
+        <rect width="6" height="118" rx="3" fill="#E10600"/>
+        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.2">TOTAL STARS</text>
+        <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">—</text>
+      </g>
+      <g transform="translate(286 134)">
+        <rect width="290" height="118" rx="14" fill="url(#panel)" stroke="#1C2026"/>
+        <rect width="6" height="118" rx="3" fill="#E10600"/>
+        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.1">PUBLIC EVENTS · 30D</text>
+        <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">—</text>
+      </g>
+    </g>
+
+    <g transform="translate(0 380)">
+      <text x="0" y="0" fill="#6F7682" font-size="12" letter-spacing="1.2">PUBLIC CODE MIX</text>
+      <rect x="0" y="20" width="576" height="14" rx="7" fill="#1C2026"/>
+      <text x="0" y="70" fill="#A7ADB7" font-size="14">Awaiting first daily refresh.</text>
+      <text x="0" y="94" fill="#6F7682" font-size="12">Profile repository excluded from code mix.</text>
+      <path d="M0 120H576" stroke="#1C2026"/>
+      <text x="0" y="151" fill="#6F7682" font-size="11">SOURCE · GitHub public API</text>
+      <text x="0" y="178" fill="#6F7682" font-size="11">UPDATED · PENDING FIRST REFRESH</text>
+    </g>
+  </g>
+</svg>

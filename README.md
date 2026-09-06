@@ -11,12 +11,10 @@
 </p>
 
 <p align="center">
-  <code>CAN</code>&nbsp;&nbsp;
-  <code>UDS</code>&nbsp;&nbsp;
-  <code>ODX</code>&nbsp;&nbsp;
-  <code>MQB</code>&nbsp;&nbsp;
-  <code>MIB</code>&nbsp;&nbsp;
-  <code>OEM&nbsp;Retrofit</code>
+  <picture>
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/signal-mobile.svg">
+    <img src="assets/signal.svg" alt="VAGTechNL profile signal, protocols and rotating technical focus" width="100%" />
+  </picture>
 </p>
 
 <p align="center">
@@ -58,6 +56,14 @@
   </picture>
 </p>
 
+<a name="metrics"></a>
+<p align="center">
+  <picture>
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/metrics-mobile.svg">
+    <img src="assets/metrics.svg" alt="VAGTechNL public GitHub profile telemetry, refreshed daily" width="100%" />
+  </picture>
+</p>
+
 ---
 
 <p align="center">
@@ -70,6 +76,7 @@
   <a href="https://github.com/VAGTechNL/VAGTechNL/blob/main/README.md#technical-flow">Technical flow</a>&nbsp;·&nbsp;
   <a href="https://github.com/VAGTechNL/VAGTechNL/blob/main/README.md#principles">Principles</a>&nbsp;·&nbsp;
   <a href="https://github.com/VAGTechNL/VAGTechNL/blob/main/README.md#stack">Stack</a>&nbsp;·&nbsp;
+  <a href="https://github.com/VAGTechNL/VAGTechNL/blob/main/README.md#metrics">Metrics</a>&nbsp;·&nbsp;
   <a href="https://github.com/VAGTechNL">Back to top ↑</a></sub>
 </p>
 

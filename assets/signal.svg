@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
+  <title id="title">VAGTechNL profile signal</title>
+  <desc id="desc">Compact VAGTechNL identity badges and a rotating technical focus line.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D0F13"/>
+      <stop offset="1" stop-color="#14171C"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .focus { opacity: 0; animation: focusCycle 16s ease-in-out infinite; }
+    .f1 { animation-delay: 0s; opacity: 1; }
+    .f2 { animation-delay: 4s; }
+    .f3 { animation-delay: 8s; }
+    .f4 { animation-delay: 12s; }
+    @keyframes focusCycle {
+      0%, 20% { opacity: 1; }
+      24%, 100% { opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .focus { animation: none; opacity: 0; }
+      .f1 { opacity: 1; }
+    }
+  </style>
+
+  <rect width="1200" height="220" rx="24" fill="#07080B"/>
+  <rect x="1" y="1" width="1198" height="218" rx="23" fill="none" stroke="#1C2026" stroke-width="2"/>
+
+  <g transform="translate(38 28)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
+    <text x="0" y="0" fill="#6F7682" font-size="12" letter-spacing="1.8">PROFILE SIGNAL</text>
+    <text x="0" y="27" fill="#A7ADB7" font-size="14">Identity, protocols and current technical focus.</text>
+
+    <g transform="translate(0 52)">
+      <g>
+        <rect width="170" height="42" rx="10" fill="url(#panel)" stroke="#1C2026"/>
+        <rect x="0" y="0" width="5" height="42" rx="2.5" fill="#E10600"/>
+        <text x="18" y="17" fill="#6F7682" font-size="10" letter-spacing="1.1">PROFILE</text>
+        <text x="18" y="32" fill="#E6E8EB" font-size="13" font-weight="700">V1.1</text>
+      </g>
+      <g transform="translate(184 0)">
+        <rect width="218" height="42" rx="10" fill="url(#panel)" stroke="#1C2026"/>
+        <rect x="0" y="0" width="5" height="42" rx="2.5" fill="#E10600"/>
+        <text x="18" y="17" fill="#6F7682" font-size="10" letter-spacing="1.1">ENGINEERING</text>
+        <text x="18" y="32" fill="#E6E8EB" font-size="13" font-weight="700">EVIDENCE-DRIVEN</text>
+      </g>
+      <g transform="translate(416 0)">
+        <rect width="250" height="42" rx="10" fill="url(#panel)" stroke="#1C2026"/>
+        <rect x="0" y="0" width="5" height="42" rx="2.5" fill="#E10600"/>
+        <text x="18" y="17" fill="#6F7682" font-size="10" letter-spacing="1.1">PROTOCOLS</text>
+        <text x="18" y="32" fill="#E6E8EB" font-size="13" font-weight="700">CAN · UDS · ODX · MQB</text>
+      </g>
+      <g transform="translate(680 0)">
+        <rect width="206" height="42" rx="10" fill="url(#panel)" stroke="#1C2026"/>
+        <rect x="0" y="0" width="5" height="42" rx="2.5" fill="#E10600"/>
+        <text x="18" y="17" fill="#6F7682" font-size="10" letter-spacing="1.1">DOMAIN</text>
+        <text x="18" y="32" fill="#E6E8EB" font-size="13" font-weight="700">OEM RETROFIT</text>
+      </g>
+      <g transform="translate(900 0)">
+        <rect width="224" height="42" rx="10" fill="url(#panel)" stroke="#1C2026"/>
+        <rect x="0" y="0" width="5" height="42" rx="2.5" fill="#E10600"/>
+        <text x="18" y="17" fill="#6F7682" font-size="10" letter-spacing="1.1">WEB</text>
+        <text x="18" y="32" fill="#E6E8EB" font-size="13" font-weight="700">VAGTECHNL.EU</text>
+      </g>
+    </g>
+
+    <path d="M0 118H1124" stroke="#1C2026"/>
+
+    <g transform="translate(0 146)">
+      <circle cx="5" cy="-4" r="5" fill="#E10600"/>
+      <text x="20" y="0" fill="#6F7682" font-size="11" letter-spacing="1.4">ACTIVE FOCUS</text>
+      <g transform="translate(150 0)" fill="#FFFFFF" font-size="22" font-weight="700">
+        <text class="focus f1">Diagnostics &amp; vehicle communication</text>
+        <text class="focus f2">OEM retrofits, coding &amp; datasets</text>
+        <text class="focus f3">CAN · UDS · ODX · MQB</text>
+        <text class="focus f4">Evidence-driven research &amp; tooling</text>
+      </g>
+    </g>
+  </g>
+</svg>

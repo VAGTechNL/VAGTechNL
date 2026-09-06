@@ -1,0 +1,48 @@
+name: Update profile metrics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 4 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/update_profile_metrics.py"
+      - ".github/workflows/profile-metrics.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-metrics
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout profile
+        uses: actions/checkout@v4
+
+      - name: Generate public metrics
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PROFILE_LOGIN: VAGTechNL
+        run: python3 scripts/update_profile_metrics.py
+
+      - name: Commit refreshed metrics
+        shell: bash
+        run: |
+          if git diff --quiet -- assets/metrics.svg assets/metrics-mobile.svg; then
+            echo "Profile metrics already current."
+            exit 0
+          fi
+
+          git config user.name "VAGTechNL Profile Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/metrics.svg assets/metrics-mobile.svg
+          git commit -m "Update profile metrics"
+          git push
