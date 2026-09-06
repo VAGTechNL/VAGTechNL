@@ -2,57 +2,88 @@
   <title id="title">VAGTechNL GitHub telemetry</title>
   <desc id="desc">Mobile daily refreshed public GitHub profile metrics.</desc>
   <defs>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07080B"/>
+      <stop offset="1" stop-color="#0D0F13"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0D0F13"/>
       <stop offset="1" stop-color="#14171C"/>
     </linearGradient>
+    <style>
+      .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+      .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+      @media (prefers-reduced-motion: reduce){.signal-motion{display:none}}
+    </style>
   </defs>
-  <rect width="640" height="650" rx="24" fill="#07080B"/>
+
+  <rect width="640" height="650" rx="24" fill="url(#surface)"/>
   <rect x="1" y="1" width="638" height="648" rx="23" fill="none" stroke="#1C2026" stroke-width="2"/>
+  <path d="M32 1H132" stroke="#E10600" stroke-width="2" stroke-linecap="round" opacity=".72"/>
 
-  <g transform="translate(32 32)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">
-    <text x="0" y="0" fill="#6F7682" font-size="13" letter-spacing="1.8">LIVE GITHUB SIGNAL</text>
-    <text x="0" y="37" fill="#FFFFFF" font-size="27" font-weight="700">Public profile telemetry</text>
-    <text x="0" y="66" fill="#A7ADB7" font-size="15">Daily refresh · public data only.</text>
+  <g transform="translate(32 30)" class="sans">
+    
+      <g transform="translate(4 4)" class="signal-motion">
+        <circle cx="0" cy="0" r="4" fill="#FF2A23" opacity=".90"/>
+        <circle cx="0" cy="0" r="4" fill="none" stroke="#FF2A23" stroke-width="1.2" opacity="0">
+          <animate attributeName="r" dur="5.5s" repeatCount="indefinite" values="4;4;11;14" keyTimes="0;.15;.32;1"/>
+          <animate attributeName="opacity" dur="5.5s" repeatCount="indefinite" values="0;.28;.12;0" keyTimes="0;.15;.32;1"/>
+        </circle>
+      </g>
+    <text x="18" y="8" class="mono" fill="#6F7682" font-size="12" letter-spacing="1.55">PUBLIC GITHUB SIGNAL</text>
+    <text x="0" y="47" fill="#FFFFFF" font-size="28" font-weight="760">Profile telemetry</text>
+    <text x="0" y="76" fill="#A7ADB7" font-size="15">Daily public snapshot · GitHub Actions</text>
 
-    <g transform="translate(0 98)">
-
+    <g transform="translate(0 108)">
+      
       <g transform="translate(0 0)">
-        <rect width="270" height="118" rx="14" fill="url(#panel)" stroke="#1C2026"/>
-        <rect width="6" height="118" rx="3" fill="#E10600"/>
-        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.05">PUBLIC REPOS</text>
-        <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">1</text>
+        <rect width="272" height="112" rx="15" fill="url(#card)" stroke="#1C2026"/>
+        <path d="M18 1H58" stroke="#E10600" stroke-width="2" stroke-linecap="round" opacity=".90"/>
+        <circle cx="22" cy="32" r="3" fill="#FF2A23" opacity=".75"/>
+        <text x="34" y="36" class="mono" fill="#6F7682" font-size="11" letter-spacing="1.05">PUBLIC REPOS</text>
+        <text x="20" y="84" fill="#FFFFFF" font-size="36" font-weight="760">1</text>
       </g>
-
-      <g transform="translate(286 0)">
-        <rect width="290" height="118" rx="14" fill="url(#panel)" stroke="#1C2026"/>
-        <rect width="6" height="118" rx="3" fill="#E10600"/>
-        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.05">FOLLOWERS</text>
-        <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">4</text>
+      
+      <g transform="translate(288 0)">
+        <rect width="288" height="112" rx="15" fill="url(#card)" stroke="#1C2026"/>
+        <path d="M18 1H58" stroke="#E10600" stroke-width="2" stroke-linecap="round" opacity=".90"/>
+        <circle cx="22" cy="32" r="3" fill="#FF2A23" opacity=".75"/>
+        <text x="34" y="36" class="mono" fill="#6F7682" font-size="11" letter-spacing="1.05">FOLLOWERS</text>
+        <text x="20" y="84" fill="#FFFFFF" font-size="36" font-weight="760">4</text>
       </g>
-
-      <g transform="translate(0 134)">
-        <rect width="270" height="118" rx="14" fill="url(#panel)" stroke="#1C2026"/>
-        <rect width="6" height="118" rx="3" fill="#E10600"/>
-        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.05">TOTAL STARS</text>
-        <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">5</text>
+      
+      <g transform="translate(0 130)">
+        <rect width="272" height="112" rx="15" fill="url(#card)" stroke="#1C2026"/>
+        <path d="M18 1H58" stroke="#E10600" stroke-width="2" stroke-linecap="round" opacity=".90"/>
+        <circle cx="22" cy="32" r="3" fill="#FF2A23" opacity=".75"/>
+        <text x="34" y="36" class="mono" fill="#6F7682" font-size="11" letter-spacing="1.05">TOTAL STARS</text>
+        <text x="20" y="84" fill="#FFFFFF" font-size="36" font-weight="760">5</text>
       </g>
-
-      <g transform="translate(286 134)">
-        <rect width="290" height="118" rx="14" fill="url(#panel)" stroke="#1C2026"/>
-        <rect width="6" height="118" rx="3" fill="#E10600"/>
-        <text x="22" y="34" fill="#6F7682" font-size="12" letter-spacing="1.05">PUBLIC EVENTS · 30D</text>
-        <text x="22" y="83" fill="#FFFFFF" font-size="38" font-weight="700">37</text>
+      
+      <g transform="translate(288 130)">
+        <rect width="288" height="112" rx="15" fill="url(#card)" stroke="#1C2026"/>
+        <path d="M18 1H58" stroke="#E10600" stroke-width="2" stroke-linecap="round" opacity=".90"/>
+        <circle cx="22" cy="32" r="3" fill="#FF2A23" opacity=".75"/>
+        <text x="34" y="36" class="mono" fill="#6F7682" font-size="11" letter-spacing="1.05">PUBLIC EVENTS · 30D</text>
+        <text x="20" y="84" fill="#FFFFFF" font-size="36" font-weight="760">37</text>
       </g>
     </g>
 
-    <g transform="translate(0 380)">
-      <text x="0" y="0" fill="#6F7682" font-size="12" letter-spacing="1.2">PUBLIC CODE MIX</text>
-      <rect x="0" y="20" width="576" height="14" rx="7" fill="#1C2026"/>
-      <text x="0" y="70" fill="#A7ADB7" font-size="14">No public code repositories indexed yet.</text><text x="0" y="94" fill="#6F7682" font-size="12">Profile repository excluded from code mix.</text>
+    <g transform="translate(0 384)">
+      <text x="0" y="0" class="mono" fill="#6F7682" font-size="11" letter-spacing="1.1">PUBLIC CODE MIX</text>
+      <text x="576" y="0" class="mono" fill="#6F7682" font-size="10" text-anchor="end">PROFILE REPO EXCLUDED</text>
+      <rect x="0" y="22" width="576" height="9" rx="4.5" fill="#1C2026"/>
+      <rect x="0" y="22" width="72" height="9" rx="4.5" fill="#252A32" opacity=".7" class="signal-motion">
+        <animate attributeName="x" dur="7s" repeatCount="indefinite" values="0;504;0" keyTimes="0;.5;1"/>
+        <animate attributeName="opacity" dur="7s" repeatCount="indefinite" values=".18;.48;.18" keyTimes="0;.5;1"/>
+      </rect>
+      
+      <text x="0" y="68" fill="#E6E8EB" font-size="14">No public code repositories yet.</text>
+      <text x="0" y="93" class="mono" fill="#6F7682" font-size="10.5">PROFILE REPO EXCLUDED · AUTO-STARTS WITH THE NEXT PUBLIC CODE REPO</text>
+
       <path d="M0 120H576" stroke="#1C2026"/>
-      <text x="0" y="151" fill="#6F7682" font-size="11">SOURCE · GitHub public API</text>
-      <text x="0" y="178" fill="#6F7682" font-size="11">UPDATED · 2026-09-06 21:02 UTC</text>
+      <text x="0" y="147" class="mono" fill="#6F7682" font-size="10">GITHUB PUBLIC API · DAILY 04:23 UTC</text>
+      <text x="0" y="171" class="mono" fill="#6F7682" font-size="10">UPDATED · 2026-09-06 21:09 UTC</text>
     </g>
   </g>
 </svg>
