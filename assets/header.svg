@@ -80,7 +80,7 @@
           <animate attributeName="stroke-opacity" values="0.18;1;1;0.18;0.18" keyTimes="0;0.02;0.09;0.11;1" dur="12s" begin="0s" repeatCount="indefinite"/>
         </path>
         <path d="M222 154V211" stroke-opacity="0.18">
-          <animate attributeName="strokke-opacity" values="0.18;1;1;0.18;0.18" keyTimes="0;0.02;0.09;0.11;1" dur="12s" begin="2.4s" repeatCount="indefinite"/>
+          <animate attributeName="stroke-opacity" values="0.18;1;1;0.18;0.18" keyTimes="0;0.02;0.09;0.11;1" dur="12s" begin="2.4s" repeatCount="indefinite"/>
         </path>
         <path d="M183 242H157" stroke-opacity="0.18">
           <animate attributeName="stroke-opacity" values="0.18;1;1;0.18;0.18" keyTimes="0;0.02;0.09;0.11;1" dur="12s" begin="4.8s" repeatCount="indefinite"/>
@@ -153,7 +153,7 @@
         </g>
       </g>
 
-      <text x="22" y="300" fill="#6F7682" font-size="10" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">CAN · UDS · ODX · MQB · OEM RETROFIT</text>
+      <text x="22" y="300" fill="#6F7682" font-size="10" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">CAN / UDS / ODX · MQB / MIB · OEM RETROFIT</text>
     </g>
   </g>
 </svg>

@@ -1,20 +1,13 @@
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/header-mobile.svg?v=2">
-    <img src="assets/header.svg?v=2" alt="VAGTechNL - Diagnostics, Retrofits, Coding, Module Research and Software" width="100%" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/header-mobile.svg?v=3">
+    <img src="assets/header.svg?v=3" alt="VAGTechNL - Diagnostics, Retrofits, Coding, Module Research and Software" width="100%" />
   </picture>
 </p>
 
 <p align="center">
   <strong>Engineering first. Evidence over assumptions.</strong><br />
   VAG diagnostics, OEM retrofits, coding, module research and software development.
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/terminal-mobile.svg">
-    <img src="assets/terminal.svg" alt="VAGTechNL technical focus, protocols and software stack" width="100%" />
-  </picture>
 </p>
 
 <a name="projects"></a>
@@ -70,7 +63,7 @@
   <a href="https://github.com/VAGTechNL/VAGTechNL/blob/main/README.md#principles">Principles</a>&nbsp;·&nbsp;
   <a href="https://github.com/VAGTechNL/VAGTechNL/blob/main/README.md#stack">Stack</a>&nbsp;·&nbsp;
   <a href="https://github.com/VAGTechNL/VAGTechNL/blob/main/README.md#metrics">Metrics</a>&nbsp;·&nbsp;
-  <a href="https://github.com/VAGTechNL">Back to top ↑</a></sub>
+  <a href="https://github.com/VAGTechNL">Top ↑</a></sub>
 </p>
 
 <p align="center">

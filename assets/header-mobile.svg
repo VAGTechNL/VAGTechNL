@@ -50,10 +50,10 @@
       </g>
       <g class="network-motion" fill="none" stroke="#FF2A23" stroke-width="3" stroke-linecap="round">
         <path d="M108 41H194" stroke-opacity=".18">
-          <animate attributeName="strokke-opacity" values=".18;1;1;.18;.18" keyTimes="0;.03;.18;.22;1" dur="6s" begin="0s" repeatCount="indefinite"/>
+          <animate attributeName="stroke-opacity" values=".18;1;1;.18;.18" keyTimes="0;.03;.18;.22;1" dur="6s" begin="0s" repeatCount="indefinite"/>
         </path>
-        <path d="M278 41H364" strokke-opacity=".18">
-          <animate attributeName="strokke-opacity" values=".18;1;1;.18;.18" keyTimes="0;.03;.18;.22;1" dur="6s" begin="3s" repeatCount="indefinite"/>
+        <path d="M278 41H364" stroke-opacity=".18">
+          <animate attributeName="stroke-opacity" values=".18;1;1;.18;.18" keyTimes="0;.03;.18;.22;1" dur="6s" begin="3s" repeatCount="indefinite"/>
         </path>
       </g>
       <g class="network-motion" aria-hidden="true" fill="#FF2A23">
