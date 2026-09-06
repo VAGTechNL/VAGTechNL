@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="470" viewBox="0 0 640 470" role="img" aria-labelledby="title desc">
 <title id="title">VAGTechNL mobile GitHub profile header</title>
-<desc id="desc">Mobile VAGTechNL banner with diagnostics, retrofit, network cues and rotating technical focus.</desc>
+<desc id="desc">Mobile VAGTechNL banner with diagnostics, retrofit, rotating technical focus and subtle network signal animation.</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07080B"/><stop offset="1" stop-color="#0D0F13"/></linearGradient>
   <radialGradient id="glow" cx="82%" cy="20%" r="55%"><stop offset="0" stop-color="#E10600" stop-opacity=".16"/><stop offset="1" stop-color="#E10600" stop-opacity="0"/></radialGradient>
@@ -12,10 +12,36 @@
   .f2 { animation-delay: 4s; }
   .f3 { animation-delay: 8s; }
   .f4 { animation-delay: 12s; }
+
+  .signal {
+    fill: none;
+    stroke: #FF2A23;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-dasharray: 8 48;
+    opacity: 0;
+    animation: signalTravel 1.7s linear infinite, signalGate 8s linear infinite;
+  }
+  .route-right { animation-delay: .55s, -4s; }
+  .mobile-core { animation: corePulse 4s ease-in-out infinite; }
+
   @keyframes focusCycle { 0%, 20% { opacity: 1; } 24%, 100% { opacity: 0; } }
+  @keyframes signalTravel { to { stroke-dashoffset: -56; } }
+  @keyframes signalGate {
+    0%, 7% { opacity: 0; }
+    15%, 39% { opacity: .95; }
+    48%, 100% { opacity: 0; }
+  }
+  @keyframes corePulse {
+    0%, 100% { stroke-opacity: .45; }
+    50% { stroke-opacity: 1; }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .focus { animation: none; opacity: 0; }
     .f1 { opacity: 1; }
+    .signal { animation: none; opacity: 0; }
+    .mobile-core { animation: none; }
   }
 </style>
 <rect width="640" height="470" rx="28" fill="url(#bg)"/>
@@ -43,11 +69,18 @@
     </g>
     <g transform="translate(0 317)" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
       <rect width="556" height="82" rx="18" fill="#0D0F13" stroke="#1C2026"/>
-      <g stroke="#6F7682" stroke-opacity=".38" stroke-width="2" fill="none"><path d="M108 41H194M278 41H364"/></g>
-      <g stroke="#E10600" stroke-width="2.5"><path d="M194 41H278"/></g>
+      <g stroke="#6F7682" stroke-opacity=".34" stroke-width="2" fill="none">
+        <path d="M108 41H194"/>
+        <path d="M278 41H364"/>
+      </g>
+      <g stroke="#E10600" stroke-opacity=".22" stroke-width="2.5" fill="none"><path d="M108 41H194"/></g>
+      <g aria-hidden="true">
+        <path class="signal" d="M108 41H194"/>
+        <path class="signal route-right" d="M278 41H364"/>
+      </g>
       <g text-anchor="middle">
         <g transform="translate(24 18)"><rect width="84" height="46" rx="12" fill="#14171C" stroke="#252A32"/><text x="42" y="28" fill="#E6E8EB" font-size="15">5F</text></g>
-        <g transform="translate(194 18)"><rect width="84" height="46" rx="12" fill="#14171C" stroke="#E10600" stroke-opacity=".75"/><text x="42" y="28" fill="#FFFFFF" font-size="15">GW</text></g>
+        <g transform="translate(194 18)"><rect class="mobile-core" width="84" height="46" rx="12" fill="#14171C" stroke="#E10600" stroke-opacity=".75"/><text x="42" y="28" fill="#FFFFFF" font-size="15">GW</text></g>
         <g transform="translate(364 18)"><rect width="84" height="46" rx="12" fill="#14171C" stroke="#252A32"/><text x="42" y="28" fill="#E6E8EB" font-size="15">01</text></g>
         <text x="505" y="48" fill="#FF2A23" font-size="14">CAN / UDS</text>
       </g>
