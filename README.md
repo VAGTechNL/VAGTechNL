@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/header-mobile.svg?v=5">
-    <img src="assets/header.svg?v=5" alt="VAGTechNL - technical VAG community, knowledge and tooling platform" width="100%" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/header-mobile.svg?v=6">
+    <img src="assets/header.svg?v=6" alt="VAGTechNL - premium technical automotive community, knowledge and tooling platform" width="100%" />
   </picture>
 </p>
 

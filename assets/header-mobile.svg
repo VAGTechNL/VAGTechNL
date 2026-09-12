@@ -1,7 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="520" viewBox="0 0 640 520" role="img" aria-labelledby="title desc">
-<title id="title">VAGTechNL mobile GitHub profile header</title><desc id="desc">Mobile VAGTechNL product header connecting forum, knowledge, CodeGarage and tools.</desc>
-<defs><style>.sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}@media (prefers-reduced-motion: reduce){.signal-motion{display:none}}</style></defs>
-<rect width="640" height="520" rx="18" fill="#07080B"/><rect x="1" y="1" width="638" height="518" rx="17" fill="none" stroke="#1C2026" stroke-width="2"/>
-<g class="sans"><g transform="translate(24 20)"><rect width="592" height="58" rx="12" fill="#0D0F13" stroke="#1C2026"/><rect x="16" y="15" width="28" height="28" rx="8" fill="#11151B" stroke="#E30613" stroke-opacity=".72"/><path d="M22 35L28 21H32L38 35" fill="none" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="56" y="37" fill="#FFFFFF" font-size="20" font-weight="800">VAGTechNL</text><text x="568" y="35" class="mono" fill="#6F7682" font-size="10" text-anchor="end">GITHUB / PROFILE</text></g>
-<g transform="translate(36 116)"><path d="M0 0H22" stroke="#E30613" stroke-width="2"/><text x="34" y="4" class="mono" fill="#A7ADB7" font-size="11" font-weight="700" letter-spacing="1.6">TECHNICAL VAG PLATFORM</text><text x="0" y="58" fill="#FFFFFF" font-size="40" font-weight="820" letter-spacing="-1.2">Engineering first.</text><text x="0" y="104" fill="#FFFFFF" font-size="40" font-weight="820" letter-spacing="-1.2">Evidence over assumptions.</text><text x="0" y="140" fill="#A7ADB7" font-size="16">Forum-first community, durable knowledge</text><text x="0" y="164" fill="#A7ADB7" font-size="16">and technical tooling.</text></g>
-<g transform="translate(36 315)"><text x="0" y="0" class="mono" fill="#6F7682" font-size="11" font-weight="700" letter-spacing="1.5">PLATFORM</text><g transform="translate(0 20)"><rect width="568" height="128" rx="13" fill="#0D0F13" stroke="#1C2026"/><g transform="translate(16 16)"><rect width="122" height="42" rx="9" fill="#11151B" stroke="#E30613" stroke-opacity=".55"/><text x="61" y="26" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="750">Forum</text></g><g transform="translate(154 16)"><rect width="122" height="42" rx="9" fill="#11151B" stroke="#1C2026"/><text x="61" y="26" text-anchor="middle" fill="#E6E8EB" font-size="13" font-weight="750">Knowledge</text></g><g transform="translate(292 16)"><rect width="122" height="42" rx="9" fill="#11151B" stroke="#1C2026"/><text x="61" y="26" text-anchor="middle" fill="#E6E8EB" font-size="13" font-weight="750">CodeGarage</text></g><g transform="translate(430 16)"><rect width="122" height="42" rx="9" fill="#11151B" stroke="#1C2026"/><text x="61" y="26" text-anchor="middle" fill="#E6E8EB" font-size="13" font-weight="750">Tools</text></g><path d="M24 78H544" stroke="#252A32"/><circle class="signal-motion" cx="24" cy="78" r="3.5" fill="#E30613"><animate attributeName="cx" values="24;544;24" dur="9s" repeatCount="indefinite"/><animate attributeName="opacity" values=".25;.9;.25" dur="9s" repeatCount="indefinite"/></circle><text x="16" y="108" fill="#6F7682" font-size="11.5">Shared technical context · separate responsibilities</text></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="620" viewBox="0 0 640 620" role="img" aria-labelledby="title desc">
+<title id="title">VAGTechNL mobile GitHub profile hero</title>
+<desc id="desc">Mobile dark premium automotive hero with stylised vehicle, red garage light and evidence-first positioning.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06080B"/><stop offset=".7" stop-color="#090B0F"/><stop offset="1" stop-color="#11151B"/></linearGradient>
+  <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E30613" stop-opacity="0"/><stop offset=".48" stop-color="#FF6B73" stop-opacity=".7"/><stop offset="1" stop-color="#E30613" stop-opacity="0"/></linearGradient>
+  <linearGradient id="car" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2A3039"/><stop offset=".55" stop-color="#151A20"/><stop offset="1" stop-color="#07090D"/></linearGradient>
+  <clipPath id="carClip"><path d="M55 470C88 424 148 397 218 389C298 379 376 388 429 410L504 445L567 455C588 459 599 473 598 491V507H54Z"/></clipPath>
+  <style>.sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}@media (prefers-reduced-motion: reduce){.motion{display:none}}</style>
+</defs>
+
+<rect width="640" height="620" rx="22" fill="url(#bg)"/>
+<rect x="1" y="1" width="638" height="618" rx="21" fill="none" stroke="#1C2026" stroke-width="2"/>
+<rect x="429" y="320" width="3" height="226" fill="url(#beam)" opacity=".78"/>
+<rect x="463" y="300" width="14" height="250" fill="url(#beam)" opacity=".12"/>
+
+<g class="sans">
+  <g transform="translate(22 20)">
+    <rect width="596" height="56" rx="11" fill="#0D0F13" stroke="#1C2026"/>
+    <rect x="14" y="14" width="28" height="28" rx="7" fill="#11151B" stroke="#E30613" stroke-opacity=".75"/>
+    <path d="M20 34L26 20H30L36 34" fill="none" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="54" y="36" fill="#FFFFFF" font-size="20" font-weight="820">VAGTechNL</text>
+    <text x="572" y="34" class="mono" text-anchor="end" fill="#6F7682" font-size="9.5">TECHNIEK · KENNIS · COMMUNITY</text>
+  </g>
+
+  <g transform="translate(34 112)">
+    <path d="M0 0H24" stroke="#E30613" stroke-width="2.5"/>
+    <text x="36" y="4" class="mono" fill="#A7ADB7" font-size="10.5" font-weight="720" letter-spacing="1.55">TECHNICAL VAG PLATFORM</text>
+    <text x="0" y="58" fill="#FFFFFF" font-size="42" font-weight="840" letter-spacing="-1.4">Engineering first.</text>
+    <text x="0" y="105" fill="#FFFFFF" font-size="42" font-weight="840" letter-spacing="-1.4">Evidence over assumptions.</text>
+    <text x="0" y="142" fill="#A7ADB7" font-size="15.5">Forum-first community, durable knowledge</text>
+    <text x="0" y="166" fill="#A7ADB7" font-size="15.5">and technical tooling.</text>
+
+    <g transform="translate(0 198)">
+      <rect width="110" height="30" rx="7" fill="#11151B" stroke="#252A32"/><text x="55" y="19" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5">FORUM FIRST</text>
+      <g transform="translate(122)"><rect width="132" height="30" rx="7" fill="#11151B" stroke="#252A32"/><text x="66" y="19" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5">EVIDENCE DRIVEN</text></g>
+      <g transform="translate(266)"><rect width="158" height="30" rx="7" fill="#11151B" stroke="#252A32"/><text x="79" y="19" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5">UNKNOWN STAYS UNKNOWN</text></g>
+    </g>
+  </g>
+
+  <g>
+    <ellipse cx="324" cy="510" rx="272" ry="18" fill="#050608" opacity=".93"/>
+    <path d="M55 470C88 424 148 397 218 389C298 379 376 388 429 410L504 445L567 455C588 459 599 473 598 491V507H54Z" fill="url(#car)" stroke="#343A44" stroke-width="1.2"/>
+    <path d="M161 414C207 392 281 390 342 398C376 402 404 411 429 424L468 445H126L161 414Z" fill="#10151B" stroke="#303741"/>
+    <path d="M170 417C210 402 247 399 282 400L274 445H137Z" fill="#090D11"/>
+    <path d="M292 400C347 400 390 410 428 426L464 445H285Z" fill="#12181E"/>
+    <path d="M101 457C176 438 257 435 337 439C417 443 487 452 558 471" fill="none" stroke="#3B424D" stroke-width="1.2"/>
+    <path d="M78 479H575" stroke="#0A0D11" stroke-width="11" opacity=".63"/>
+    <path d="M70 472C83 466 100 461 119 458" fill="none" stroke="#FF6B73" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M538 458C557 462 570 467 582 473" fill="none" stroke="#E30613" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="161" cy="502" r="34" fill="#06080B" stroke="#2A3038" stroke-width="5"/><circle cx="161" cy="502" r="17" fill="#11151B" stroke="#343A44" stroke-width="3"/>
+    <circle cx="493" cy="502" r="34" fill="#06080B" stroke="#2A3038" stroke-width="5"/><circle cx="493" cy="502" r="17" fill="#11151B" stroke="#343A44" stroke-width="3"/>
+
+    <g class="motion" clip-path="url(#carClip)">
+      <rect x="56" y="386" width="1.5" height="124" fill="#FF6B73" opacity="0"><animate attributeName="x" values="56;590" dur="8.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.34;.34;0" keyTimes="0;.08;.9;1" dur="8.5s" repeatCount="indefinite"/></rect>
+    </g>
+  </g>
+
+  <g transform="translate(34 548)">
+    <text x="0" y="0" class="mono" fill="#6F7682" font-size="9.5">FORUM · KENNISBANK · CODEGARAGE · TOOLS</text>
+    <text x="572" y="0" class="mono" fill="#E30613" font-size="9.5" text-anchor="end">VAGTECHNL</text>
+    <path d="M0 18H572" stroke="#1C2026"/>
+    <text x="0" y="42" class="mono" fill="#4F5661" font-size="9">FOR DRIVERS | BY ENTHUSIASTS</text>
+    <text x="572" y="42" class="mono" fill="#4F5661" font-size="9" text-anchor="end">KNOWLEDGE DRIVES FURTHER</text>
+  </g>
+</g>
+</svg>
