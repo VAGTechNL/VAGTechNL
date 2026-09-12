@@ -298,7 +298,13 @@ def render_desktop(
   <defs>
     <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="{COLORS['canvas']}"/>
-      <stop offset="1" stop-color="{COLORS['panel']}"/>
+      <stop offset=".72" stop-color="{COLORS['panel']}"/>
+      <stop offset="1" stop-color="{COLORS['card']}"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="{COLORS['red']}" stop-opacity="0"/>
+      <stop offset=".5" stop-color="{COLORS['red_bright']}" stop-opacity=".42"/>
+      <stop offset="1" stop-color="{COLORS['red']}" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="{COLORS['panel']}"/>
@@ -313,7 +319,8 @@ def render_desktop(
 
   <rect width="1200" height="360" rx="18" fill="url(#surface)"/>
   <rect x="1" y="1" width="1198" height="358" rx="17" fill="none" stroke="{COLORS['border']}" stroke-width="2"/>
-  <path d="M38 1H150" stroke="{COLORS['red']}" stroke-width="2" stroke-linecap="round" opacity=".72"/>
+  <rect x="1082" y="18" width="3" height="294" rx="1.5" fill="url(#beam)" opacity=".55"/>
+  <path d="M38 1H150" stroke="{COLORS['red']}" stroke-width="2" stroke-linecap="round" opacity=".82"/>
 
   <g transform="translate(38 30)" class="sans">
     {live_indicator(4, 4)}
@@ -361,7 +368,13 @@ def render_mobile(
   <defs>
     <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="{COLORS['canvas']}"/>
-      <stop offset="1" stop-color="{COLORS['panel']}"/>
+      <stop offset=".72" stop-color="{COLORS['panel']}"/>
+      <stop offset="1" stop-color="{COLORS['card']}"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="{COLORS['red']}" stop-opacity="0"/>
+      <stop offset=".5" stop-color="{COLORS['red_bright']}" stop-opacity=".36"/>
+      <stop offset="1" stop-color="{COLORS['red']}" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="{COLORS['panel']}"/>
@@ -376,7 +389,8 @@ def render_mobile(
 
   <rect width="640" height="{total_height}" rx="18" fill="url(#surface)"/>
   <rect x="1" y="1" width="638" height="{total_height - 2}" rx="17" fill="none" stroke="{COLORS['border']}" stroke-width="2"/>
-  <path d="M32 1H132" stroke="{COLORS['red']}" stroke-width="2" stroke-linecap="round" opacity=".72"/>
+  <rect x="548" y="18" width="3" height="{total_height - 50}" rx="1.5" fill="url(#beam)" opacity=".42"/>
+  <path d="M32 1H132" stroke="{COLORS['red']}" stroke-width="2" stroke-linecap="round" opacity=".82"/>
 
   <g transform="translate(32 30)" class="sans">
     {live_indicator(4, 4)}

@@ -1,67 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="620" viewBox="0 0 640 620" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="660" viewBox="0 0 640 660" role="img" aria-labelledby="title desc">
 <title id="title">VAGTechNL mobile GitHub profile hero</title>
-<desc id="desc">Mobile dark premium automotive hero with stylised vehicle, red garage light and evidence-first positioning.</desc>
+<desc id="desc">Mobile premium VAGTechNL hero with a stylised Volkswagen Polo 6C GTI, red garage lighting and evidence-first positioning.</desc>
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06080B"/><stop offset=".7" stop-color="#090B0F"/><stop offset="1" stop-color="#11151B"/></linearGradient>
-  <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E30613" stop-opacity="0"/><stop offset=".48" stop-color="#FF6B73" stop-opacity=".7"/><stop offset="1" stop-color="#E30613" stop-opacity="0"/></linearGradient>
-  <linearGradient id="car" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2A3039"/><stop offset=".55" stop-color="#151A20"/><stop offset="1" stop-color="#07090D"/></linearGradient>
-  <clipPath id="carClip"><path d="M55 470C88 424 148 397 218 389C298 379 376 388 429 410L504 445L567 455C588 459 599 473 598 491V507H54Z"/></clipPath>
-  <style>.sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}@media (prefers-reduced-motion: reduce){.motion{display:none}}</style>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06080B"/><stop offset=".68" stop-color="#090B0F"/><stop offset="1" stop-color="#11151B"/></linearGradient>
+  <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E30613" stop-opacity="0"/><stop offset=".5" stop-color="#FF6B73" stop-opacity=".72"/><stop offset="1" stop-color="#E30613" stop-opacity="0"/></linearGradient>
+  <linearGradient id="body" x1=".04" y1=".08" x2=".94" y2=".9"><stop offset="0" stop-color="#353D47"/><stop offset=".27" stop-color="#252B33"/><stop offset=".58" stop-color="#15191F"/><stop offset="1" stop-color="#07080B"/></linearGradient>
+  <radialGradient id="wheel" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#343B44"/><stop offset=".38" stop-color="#1C2127"/><stop offset=".42" stop-color="#090B0E"/><stop offset="1" stop-color="#050607"/></radialGradient>
+  <clipPath id="carClip"><path d="M44 482C68 444 110 418 166 403L235 384C280 371 342 373 385 387L446 408L489 443L559 459C582 464 598 480 598 503V521H44Z"/></clipPath>
+  <style>.sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}@media(prefers-reduced-motion:reduce){.motion{display:none}}</style>
 </defs>
-
-<rect width="640" height="620" rx="22" fill="url(#bg)"/>
-<rect x="1" y="1" width="638" height="618" rx="21" fill="none" stroke="#1C2026" stroke-width="2"/>
-<rect x="429" y="320" width="3" height="226" fill="url(#beam)" opacity=".78"/>
-<rect x="463" y="300" width="14" height="250" fill="url(#beam)" opacity=".12"/>
+<rect width="640" height="660" rx="22" fill="url(#bg)"/><rect x="1" y="1" width="638" height="658" rx="21" fill="none" stroke="#1C2026" stroke-width="2"/>
+<rect x="449" y="340" width="3" height="240" fill="url(#beam)" opacity=".8"/><rect x="480" y="320" width="14" height="260" fill="url(#beam)" opacity=".12"/>
 
 <g class="sans">
-  <g transform="translate(22 20)">
-    <rect width="596" height="56" rx="11" fill="#0D0F13" stroke="#1C2026"/>
-    <rect x="14" y="14" width="28" height="28" rx="7" fill="#11151B" stroke="#E30613" stroke-opacity=".75"/>
-    <path d="M20 34L26 20H30L36 34" fill="none" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="54" y="36" fill="#FFFFFF" font-size="20" font-weight="820">VAGTechNL</text>
-    <text x="572" y="34" class="mono" text-anchor="end" fill="#6F7682" font-size="9.5">TECHNIEK · KENNIS · COMMUNITY</text>
-  </g>
-
-  <g transform="translate(34 112)">
-    <path d="M0 0H24" stroke="#E30613" stroke-width="2.5"/>
-    <text x="36" y="4" class="mono" fill="#A7ADB7" font-size="10.5" font-weight="720" letter-spacing="1.55">TECHNICAL VAG PLATFORM</text>
-    <text x="0" y="58" fill="#FFFFFF" font-size="42" font-weight="840" letter-spacing="-1.4">Engineering first.</text>
-    <text x="0" y="105" fill="#FFFFFF" font-size="42" font-weight="840" letter-spacing="-1.4">Evidence over assumptions.</text>
-    <text x="0" y="142" fill="#A7ADB7" font-size="15.5">Forum-first community, durable knowledge</text>
-    <text x="0" y="166" fill="#A7ADB7" font-size="15.5">and technical tooling.</text>
-
-    <g transform="translate(0 198)">
-      <rect width="110" height="30" rx="7" fill="#11151B" stroke="#252A32"/><text x="55" y="19" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5">FORUM FIRST</text>
-      <g transform="translate(122)"><rect width="132" height="30" rx="7" fill="#11151B" stroke="#252A32"/><text x="66" y="19" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5">EVIDENCE DRIVEN</text></g>
-      <g transform="translate(266)"><rect width="158" height="30" rx="7" fill="#11151B" stroke="#252A32"/><text x="79" y="19" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5">UNKNOWN STAYS UNKNOWN</text></g>
-    </g>
+  <g transform="translate(22 20)"><rect width="596" height="56" rx="11" fill="#0D0F13" stroke="#1C2026"/><rect x="14" y="14" width="28" height="28" rx="7" fill="#11151B" stroke="#E30613" stroke-opacity=".76"/><path d="M20 34L26 20H30L36 34" fill="none" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="54" y="36" fill="#FFFFFF" font-size="20" font-weight="820">VAGTechNL</text><text x="572" y="34" class="mono" text-anchor="end" fill="#6F7682" font-size="9.2">TECHNIEK · KENNIS · COMMUNITY</text></g>
+  <g transform="translate(34 112)"><path d="M0 0H24" stroke="#E30613" stroke-width="2.5"/><text x="36" y="4" class="mono" fill="#A7ADB7" font-size="10.5" font-weight="720" letter-spacing="1.55">TECHNICAL VAG PLATFORM</text><text x="0" y="58" fill="#FFFFFF" font-size="42" font-weight="840" letter-spacing="-1.4">Engineering first.</text><text x="0" y="105" fill="#FFFFFF" font-size="42" font-weight="840" letter-spacing="-1.4">Evidence over assumptions.</text><text x="0" y="142" fill="#A7ADB7" font-size="15.5">Forum-first community, durable knowledge</text><text x="0" y="166" fill="#A7ADB7" font-size="15.5">and technical tooling.</text>
+    <g transform="translate(0 198)"><rect width="110" height="30" rx="7" fill="#11151B" stroke="#252A32"/><text x="55" y="19" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5">FORUM FIRST</text><g transform="translate(122)"><rect width="132" height="30" rx="7" fill="#11151B" stroke="#252A32"/><text x="66" y="19" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5">EVIDENCE DRIVEN</text></g><g transform="translate(266)"><rect width="158" height="30" rx="7" fill="#11151B" stroke="#252A32"/><text x="79" y="19" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5">UNKNOWN STAYS UNKNOWN</text></g></g>
   </g>
 
   <g>
-    <ellipse cx="324" cy="510" rx="272" ry="18" fill="#050608" opacity=".93"/>
-    <path d="M55 470C88 424 148 397 218 389C298 379 376 388 429 410L504 445L567 455C588 459 599 473 598 491V507H54Z" fill="url(#car)" stroke="#343A44" stroke-width="1.2"/>
-    <path d="M161 414C207 392 281 390 342 398C376 402 404 411 429 424L468 445H126L161 414Z" fill="#10151B" stroke="#303741"/>
-    <path d="M170 417C210 402 247 399 282 400L274 445H137Z" fill="#090D11"/>
-    <path d="M292 400C347 400 390 410 428 426L464 445H285Z" fill="#12181E"/>
-    <path d="M101 457C176 438 257 435 337 439C417 443 487 452 558 471" fill="none" stroke="#3B424D" stroke-width="1.2"/>
-    <path d="M78 479H575" stroke="#0A0D11" stroke-width="11" opacity=".63"/>
-    <path d="M70 472C83 466 100 461 119 458" fill="none" stroke="#FF6B73" stroke-width="2.5" stroke-linecap="round"/>
-    <path d="M538 458C557 462 570 467 582 473" fill="none" stroke="#E30613" stroke-width="2.2" stroke-linecap="round"/>
-    <circle cx="161" cy="502" r="34" fill="#06080B" stroke="#2A3038" stroke-width="5"/><circle cx="161" cy="502" r="17" fill="#11151B" stroke="#343A44" stroke-width="3"/>
-    <circle cx="493" cy="502" r="34" fill="#06080B" stroke="#2A3038" stroke-width="5"/><circle cx="493" cy="502" r="17" fill="#11151B" stroke="#343A44" stroke-width="3"/>
-
-    <g class="motion" clip-path="url(#carClip)">
-      <rect x="56" y="386" width="1.5" height="124" fill="#FF6B73" opacity="0"><animate attributeName="x" values="56;590" dur="8.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.34;.34;0" keyTimes="0;.08;.9;1" dur="8.5s" repeatCount="indefinite"/></rect>
-    </g>
+    <ellipse cx="320" cy="522" rx="282" ry="20" fill="#050608" opacity=".94"/>
+    <path d="M44 482C68 444 110 418 166 403L235 384C280 371 342 373 385 387L446 408L489 443L559 459C582 464 598 480 598 503V521H44Z" fill="url(#body)" stroke="#3A414B" stroke-width="1.2"/>
+    <path d="M188 397C234 378 289 376 338 381C370 384 399 393 427 407L462 437H137L188 397Z" fill="#10161C" stroke="#343C46"/>
+    <path d="M199 398C231 385 262 381 290 381L281 437H152Z" fill="#090D11"/>
+    <path d="M300 381C347 382 386 392 424 409L458 437H291Z" fill="#12181E"/>
+    <path d="M120 447C191 428 272 424 351 428C430 432 496 441 564 461" fill="none" stroke="#454D58" stroke-width="1.2" opacity=".72"/>
+    <path d="M71 483C148 463 235 459 321 463C403 467 487 478 582 498" fill="none" stroke="#171B21" stroke-width="1.4"/>
+    <path d="M65 493H585" stroke="#090C10" stroke-width="12" opacity=".7"/>
+    <path d="M91 465L139 448L176 452L140 470Z" fill="#C7D0D9" opacity=".15" stroke="#69727D" stroke-width=".8"/>
+    <path d="M493 443L547 457L572 473L518 464Z" fill="#C7D0D9" opacity=".13" stroke="#69727D" stroke-width=".8"/>
+    <path d="M146 475H492" stroke="#11151A" stroke-width="7"/><path d="M180 475H439" stroke="#E30613" stroke-width="2.4"/><rect x="413" y="466" width="34" height="14" rx="3" fill="#12161B" stroke="#E30613" stroke-opacity=".55"/><text x="430" y="476.5" class="mono" text-anchor="middle" fill="#FF6B73" font-size="8.5" font-weight="800">GTI</text>
+    <circle cx="161" cy="514" r="35" fill="url(#wheel)" stroke="#2F353E" stroke-width="4"/><circle cx="161" cy="514" r="15" fill="#11151B" stroke="#4A525D" stroke-width="2.5"/>
+    <circle cx="492" cy="514" r="35" fill="url(#wheel)" stroke="#2F353E" stroke-width="4"/><circle cx="492" cy="514" r="15" fill="#11151B" stroke="#4A525D" stroke-width="2.5"/>
+    <g class="motion" clip-path="url(#carClip)"><rect x="46" y="372" width="1.6" height="152" fill="#FF6B73" opacity="0"><animate attributeName="x" values="46;592" dur="8.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.34;.34;0" keyTimes="0;.08;.9;1" dur="8.8s" repeatCount="indefinite"/></rect></g>
   </g>
 
-  <g transform="translate(34 548)">
-    <text x="0" y="0" class="mono" fill="#6F7682" font-size="9.5">FORUM · KENNISBANK · CODEGARAGE · TOOLS</text>
-    <text x="572" y="0" class="mono" fill="#E30613" font-size="9.5" text-anchor="end">VAGTECHNL</text>
-    <path d="M0 18H572" stroke="#1C2026"/>
-    <text x="0" y="42" class="mono" fill="#4F5661" font-size="9">FOR DRIVERS | BY ENTHUSIASTS</text>
-    <text x="572" y="42" class="mono" fill="#4F5661" font-size="9" text-anchor="end">KNOWLEDGE DRIVES FURTHER</text>
-  </g>
+  <g transform="translate(34 564)"><text x="0" y="0" class="mono" fill="#6F7682" font-size="9.2">HERO VEHICLE / POLO 6C GTI / VISUAL SIGNATURE</text><text x="572" y="0" class="mono" fill="#E30613" font-size="9.2" text-anchor="end">2.5D</text><path d="M0 18H572" stroke="#1C2026"/><text x="0" y="42" class="mono" fill="#4F5661" font-size="9">FOR DRIVERS | BY ENTHUSIASTS</text><text x="572" y="42" class="mono" fill="#4F5661" font-size="9" text-anchor="end">KNOWLEDGE DRIVES FURTHER</text></g>
 </g>
 </svg>
