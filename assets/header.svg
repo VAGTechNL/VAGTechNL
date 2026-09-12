@@ -18,11 +18,18 @@
     <stop offset=".6" stop-color="#12181E"/>
     <stop offset="1" stop-color="#090C10"/>
   </linearGradient>
-  <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+  <linearGradient id="scanBand" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="#E30613" stop-opacity="0"/>
-    <stop offset=".5" stop-color="#FF6B73" stop-opacity=".58"/>
+    <stop offset=".38" stop-color="#E30613" stop-opacity=".05"/>
+    <stop offset=".5" stop-color="#FF6B73" stop-opacity=".24"/>
+    <stop offset=".62" stop-color="#E30613" stop-opacity=".05"/>
     <stop offset="1" stop-color="#E30613" stop-opacity="0"/>
   </linearGradient>
+  <clipPath id="carScanClip" clipPathUnits="userSpaceOnUse">
+    <path d="M39 310 C49 289 68 276 100 270 L147 260 C163 255 176 247 190 232 L215 210 C237 192 267 184 301 184 L371 184 C406 184 431 190 450 205 L483 231 C495 241 505 251 516 263 L532 274 C542 281 548 291 549 307 L548 326 L40 326 Z"/>
+    <circle cx="148" cy="326" r="34"/>
+    <circle cx="449" cy="326" r="34"/>
+  </clipPath>
   <radialGradient id="wheel" cx="50%" cy="45%" r="55%">
     <stop offset="0" stop-color="#303741"/>
     <stop offset=".35" stop-color="#151A20"/>
@@ -32,27 +39,13 @@
   <style>
     .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
     .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-    @media(prefers-reduced-motion:reduce){.ambient-motion{display:none}}
+    @media(prefers-reduced-motion:reduce){.scan-motion{display:none}}
   </style>
 </defs>
 
 <rect width="1200" height="420" rx="22" fill="url(#bg)"/>
 <rect x="1" y="1" width="1198" height="418" rx="21" fill="none" stroke="#1C2026" stroke-width="2"/>
 
-<!-- static garage-light baseline -->
-<rect x="908" y="32" width="2" height="322" rx="1" fill="url(#beam)" opacity=".32"/>
-<rect x="1032" y="66" width="2" height="270" rx="1" fill="url(#beam)" opacity=".22"/>
-<rect x="1124" y="98" width="1.5" height="212" rx=".75" fill="#E30613" opacity=".12"/>
-
-<!-- ambient light motion: no scan over the vehicle -->
-<g class="ambient-motion">
-  <rect x="908" y="32" width="2" height="322" rx="1" fill="url(#beam)" opacity=".12">
-    <animate attributeName="opacity" values=".12;.72;.12" dur="6.5s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="1032" y="66" width="2" height="270" rx="1" fill="url(#beam)" opacity=".08">
-    <animate attributeName="opacity" values=".08;.42;.08" dur="8.5s" repeatCount="indefinite"/>
-  </rect>
-</g>
 
 <g class="sans">
   <g transform="translate(28 22)">
@@ -136,7 +129,6 @@
     <path d="M52 296L83 288" stroke="#FFFFFF" stroke-opacity=".45" stroke-width="1.1"/>
 
     <!-- GTI side cue -->
-    <path d="M104 267H161" stroke="#E30613" stroke-width="2.2"/>
     <rect x="147" y="259" width="28" height="13" rx="3" fill="#11151B" stroke="#E30613" stroke-opacity=".6"/>
     <text x="161" y="268.5" class="mono" text-anchor="middle" fill="#FF6B73" font-size="7.8" font-weight="800">GTI</text>
 
@@ -146,7 +138,6 @@
 
     <!-- sill and restrained red accent -->
     <path d="M87 319H510" stroke="#232932" stroke-width="8" opacity=".82"/>
-    <path d="M142 318H462" stroke="#E30613" stroke-width="1.4" opacity=".72"/>
 
     <!-- wheels -->
     <circle cx="148" cy="326" r="34" fill="url(#wheel)" stroke="#303740" stroke-width="4"/>
@@ -159,6 +150,21 @@
 
     <!-- grounded outline -->
     <path d="M40 326C72 326 93 326 113 327M183 327H414M484 327C507 326 528 326 548 326" fill="none" stroke="#252A32"/>
+
+    <!-- scan is clipped to the vehicle: no page-wide laser or crosshair -->
+    <g class="scan-motion" clip-path="url(#carScanClip)">
+      <g opacity="0">
+        <rect x="-96" y="178" width="72" height="184" fill="url(#scanBand)"/>
+        <rect x="-61" y="178" width="1.4" height="184" rx=".7" fill="#FF6B73" opacity=".72"/>
+        <animateTransform attributeName="transform" type="translate" values="0 0;654 0;654 0" keyTimes="0;.68;1" dur="8.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;.9;.9;0;0" keyTimes="0;.06;.64;.7;1" dur="8.4s" repeatCount="indefinite"/>
+      </g>
+    </g>
+    <g class="scan-motion" opacity="0">
+      <text x="40" y="360" class="mono" fill="#6F7682" font-size="8.2" letter-spacing="1.1">PROFILE SCAN</text>
+      <path d="M118 357H170" stroke="#E30613" stroke-width="1"/>
+      <animate attributeName="opacity" values="0;.65;.65;0;0" keyTimes="0;.08;.62;.72;1" dur="8.4s" repeatCount="indefinite"/>
+    </g>
 
     <!-- tiny technical signature -->
     <text x="548" y="374" class="mono" text-anchor="end" fill="#4F5661" font-size="8.8" letter-spacing="1.2">POLO 6C GTI · 2D TECHNICAL STUDY</text>

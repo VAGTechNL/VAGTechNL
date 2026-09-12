@@ -5,14 +5,13 @@
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06080B"/><stop offset=".68" stop-color="#090B0F"/><stop offset="1" stop-color="#11151B"/></linearGradient>
   <linearGradient id="body" x1="0" y1="0" x2="1" y2=".8"><stop offset="0" stop-color="#303741"/><stop offset=".3" stop-color="#242A32"/><stop offset=".64" stop-color="#14191F"/><stop offset="1" stop-color="#0A0D11"/></linearGradient>
   <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#28333E"/><stop offset=".6" stop-color="#12181E"/><stop offset="1" stop-color="#090C10"/></linearGradient>
-  <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E30613" stop-opacity="0"/><stop offset=".5" stop-color="#FF6B73" stop-opacity=".5"/><stop offset="1" stop-color="#E30613" stop-opacity="0"/></linearGradient>
+  <linearGradient id="scanBand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E30613" stop-opacity="0"/><stop offset=".38" stop-color="#E30613" stop-opacity=".05"/><stop offset=".5" stop-color="#FF6B73" stop-opacity=".22"/><stop offset=".62" stop-color="#E30613" stop-opacity=".05"/><stop offset="1" stop-color="#E30613" stop-opacity="0"/></linearGradient>
+  <clipPath id="carScanClip" clipPathUnits="userSpaceOnUse"><path d="M23 192C33 170 53 158 85 152L134 141C150 136 164 127 177 112L203 90C225 71 256 64 290 64H362C397 64 423 70 442 85L476 112C488 122 500 132 511 145L527 156C539 163 545 174 546 190L545 208H24Z"/><circle cx="138" cy="208" r="34"/><circle cx="441" cy="208" r="34"/></clipPath>
   <radialGradient id="wheel" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#303741"/><stop offset=".35" stop-color="#151A20"/><stop offset=".42" stop-color="#090B0E"/><stop offset="1" stop-color="#050607"/></radialGradient>
-  <style>.sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}@media(prefers-reduced-motion:reduce){.ambient-motion{display:none}}</style>
+  <style>.sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}@media(prefers-reduced-motion:reduce){.scan-motion{display:none}}</style>
 </defs>
 <rect width="640" height="640" rx="22" fill="url(#bg)"/><rect x="1" y="1" width="638" height="638" rx="21" fill="none" stroke="#1C2026" stroke-width="2"/>
 
-<rect x="452" y="300" width="2" height="236" fill="url(#beam)" opacity=".28"/><rect x="510" y="326" width="1.5" height="190" fill="url(#beam)" opacity=".18"/>
-<g class="ambient-motion"><rect x="452" y="300" width="2" height="236" fill="url(#beam)" opacity=".1"><animate attributeName="opacity" values=".1;.58;.1" dur="6.5s" repeatCount="indefinite"/></rect></g>
 
 <g class="sans">
   <g transform="translate(22 20)"><rect width="596" height="56" rx="11" fill="#0D0F13" stroke="#1C2026"/><rect x="14" y="14" width="28" height="28" rx="7" fill="#11151B" stroke="#E30613" stroke-opacity=".76"/><path d="M20 34L26 20H30L36 34" fill="none" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="54" y="36" fill="#FFFFFF" font-size="20" font-weight="820">VAGTechNL</text><text x="572" y="34" class="mono" text-anchor="end" fill="#6F7682" font-size="9.2">TECHNIEK · KENNIS · COMMUNITY</text></g>
@@ -27,12 +26,25 @@
     <path d="M312 71L306 208M395 78L412 208" stroke="#080A0D" stroke-width="3"/>
     <path d="M170 136C220 124 284 121 347 122C416 123 467 130 510 148" fill="none" stroke="#48515D" stroke-width="1.1" opacity=".75"/>
     <path d="M29 179L65 168L95 171L68 183Z" fill="#C9D2DB" opacity=".16" stroke="#6A7480" stroke-width=".8"/><path d="M36 178L66 169" stroke="#FFFFFF" stroke-opacity=".45" stroke-width="1.1"/>
-    <path d="M92 148H150" stroke="#E30613" stroke-width="2.2"/><rect x="136" y="140" width="28" height="13" rx="3" fill="#11151B" stroke="#E30613" stroke-opacity=".6"/><text x="150" y="149.5" class="mono" text-anchor="middle" fill="#FF6B73" font-size="7.8" font-weight="800">GTI</text>
+    <rect x="136" y="140" width="28" height="13" rx="3" fill="#11151B" stroke="#E30613" stroke-opacity=".6"/><text x="150" y="149.5" class="mono" text-anchor="middle" fill="#FF6B73" font-size="7.8" font-weight="800">GTI</text>
     <rect x="271" y="138" width="27" height="5" rx="2.5" fill="#272E37" stroke="#59636F" stroke-width=".6"/><rect x="389" y="138" width="27" height="5" rx="2.5" fill="#272E37" stroke="#59636F" stroke-width=".6"/>
-    <path d="M75 201H508" stroke="#232932" stroke-width="8" opacity=".82"/><path d="M132 200H458" stroke="#E30613" stroke-width="1.4" opacity=".72"/>
+    <path d="M75 201H508" stroke="#232932" stroke-width="8" opacity=".82"/>
     <circle cx="138" cy="208" r="34" fill="url(#wheel)" stroke="#303740" stroke-width="4"/><circle cx="138" cy="208" r="15" fill="#11151B" stroke="#4D5661" stroke-width="2.2"/>
     <circle cx="441" cy="208" r="34" fill="url(#wheel)" stroke="#303740" stroke-width="4"/><circle cx="441" cy="208" r="15" fill="#11151B" stroke="#4D5661" stroke-width="2.2"/>
     <path d="M24 208C58 208 82 208 103 209M173 209H406M476 209C501 208 524 208 545 208" fill="none" stroke="#252A32"/>
+    <g class="scan-motion" clip-path="url(#carScanClip)">
+      <g opacity="0">
+        <rect x="-92" y="58" width="70" height="190" fill="url(#scanBand)"/>
+        <rect x="-58" y="58" width="1.4" height="190" rx=".7" fill="#FF6B73" opacity=".7"/>
+        <animateTransform attributeName="transform" type="translate" values="0 0;646 0;646 0" keyTimes="0;.68;1" dur="8.4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;.88;.88;0;0" keyTimes="0;.06;.64;.7;1" dur="8.4s" repeatCount="indefinite"/>
+      </g>
+    </g>
+    <g class="scan-motion" opacity="0">
+      <text x="24" y="252" class="mono" fill="#6F7682" font-size="8" letter-spacing="1.05">PROFILE SCAN</text>
+      <path d="M101 249H153" stroke="#E30613" stroke-width="1"/>
+      <animate attributeName="opacity" values="0;.62;.62;0;0" keyTimes="0;.08;.62;.72;1" dur="8.4s" repeatCount="indefinite"/>
+    </g>
   </g>
 
   <g transform="translate(34 568)"><text x="0" y="0" class="mono" fill="#6F7682" font-size="9.2">POLO 6C GTI · 2D TECHNICAL STUDY</text><text x="572" y="0" class="mono" fill="#E30613" font-size="9.2" text-anchor="end">VAGTECHNL</text><path d="M0 18H572" stroke="#1C2026"/><text x="0" y="42" class="mono" fill="#4F5661" font-size="9">FOR DRIVERS | BY ENTHUSIASTS</text><text x="572" y="42" class="mono" fill="#4F5661" font-size="9" text-anchor="end">KNOWLEDGE DRIVES FURTHER</text></g>
