@@ -1,96 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
 <title id="title">VAGTechNL GitHub profile hero</title>
-<desc id="desc">Premium dark VAGTechNL hero with a stylised Volkswagen Polo 6C GTI in front three-quarter perspective, restrained red garage lighting and evidence-first platform positioning.</desc>
+<desc id="desc">Dark premium automotive VAGTechNL hero with a stylised Polo 6C GTI-inspired front three-quarter vehicle and restrained red garage lighting.</desc>
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06080B"/><stop offset=".58" stop-color="#090B0F"/><stop offset="1" stop-color="#11151B"/></linearGradient>
-  <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E30613" stop-opacity="0"/><stop offset=".22" stop-color="#E30613" stop-opacity=".12"/><stop offset=".52" stop-color="#FF6B73" stop-opacity=".84"/><stop offset=".82" stop-color="#E30613" stop-opacity=".12"/><stop offset="1" stop-color="#E30613" stop-opacity="0"/></linearGradient>
-  <linearGradient id="body" x1=".06" y1=".05" x2=".92" y2=".86"><stop offset="0" stop-color="#343B45"/><stop offset=".24" stop-color="#262C34"/><stop offset=".56" stop-color="#15191F"/><stop offset=".82" stop-color="#0C0F13"/><stop offset="1" stop-color="#07080B"/></linearGradient>
-  <linearGradient id="bonnet" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3A414B"/><stop offset=".45" stop-color="#1D2229"/><stop offset="1" stop-color="#0E1116"/></linearGradient>
-  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#303A44"/><stop offset=".48" stop-color="#171D24"/><stop offset="1" stop-color="#090C10"/></linearGradient>
-  <radialGradient id="wheel" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#343B44"/><stop offset=".36" stop-color="#1C2127"/><stop offset=".4" stop-color="#090B0E"/><stop offset="1" stop-color="#050607"/></radialGradient>
-  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#151A21" stop-opacity=".72"/><stop offset="1" stop-color="#07080B" stop-opacity="0"/></linearGradient>
-  <clipPath id="carClip"><path d="M651 312C674 278 710 249 755 232L822 206C858 193 913 194 949 206L1007 228L1053 266L1125 287C1145 293 1155 309 1154 331L1153 347H652Z"/></clipPath>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06080B"/><stop offset=".64" stop-color="#090B0F"/><stop offset="1" stop-color="#11151B"/></linearGradient>
+  <linearGradient id="body" x1=".05" y1=".02" x2=".95" y2=".95"><stop offset="0" stop-color="#343A43"/><stop offset=".3" stop-color="#242A31"/><stop offset=".62" stop-color="#15191F"/><stop offset="1" stop-color="#080A0D"/></linearGradient>
+  <linearGradient id="hood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#414852"/><stop offset=".46" stop-color="#242A31"/><stop offset="1" stop-color="#101318"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#303942"/><stop offset=".48" stop-color="#171D23"/><stop offset="1" stop-color="#090C10"/></linearGradient>
+  <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E30613" stop-opacity="0"/><stop offset=".2" stop-color="#E30613" stop-opacity=".1"/><stop offset=".52" stop-color="#FF6B73" stop-opacity=".82"/><stop offset=".84" stop-color="#E30613" stop-opacity=".1"/><stop offset="1" stop-color="#E30613" stop-opacity="0"/></linearGradient>
+  <radialGradient id="wheel" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#3A424C"/><stop offset=".34" stop-color="#1B2026"/><stop offset=".42" stop-color="#090B0E"/><stop offset="1" stop-color="#050607"/></radialGradient>
   <style>.sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}@media(prefers-reduced-motion:reduce){.motion{display:none}}</style>
 </defs>
-<rect width="1200" height="430" rx="22" fill="url(#bg)"/>
-<rect x="1" y="1" width="1198" height="428" rx="21" fill="none" stroke="#1C2026" stroke-width="2"/>
-<rect x="904" y="12" width="3" height="365" rx="1.5" fill="url(#beam)" opacity=".9"/>
-<rect x="937" y="0" width="18" height="392" fill="url(#beam)" opacity=".12"/>
-<rect x="1096" y="48" width="2" height="275" fill="url(#beam)" opacity=".42"/>
-<path d="M623 360H1171" stroke="#1C2026"/>
-<path d="M675 360L620 423H1130L1080 360Z" fill="url(#floor)" opacity=".55"/>
+<rect width="1200" height="420" rx="22" fill="url(#bg)"/><rect x="1" y="1" width="1198" height="418" rx="21" fill="none" stroke="#1C2026" stroke-width="2"/>
+<rect x="911" y="16" width="3" height="350" rx="1.5" fill="url(#beam)" opacity=".9"/><rect x="946" y="0" width="18" height="380" fill="url(#beam)" opacity=".11"/><rect x="1088" y="60" width="2" height="260" fill="url(#beam)" opacity=".36"/>
+<path d="M620 350H1170" stroke="#1C2026"/><path d="M674 350L626 414H1124L1078 350Z" fill="#11151B" opacity=".34"/>
 
 <g class="sans">
   <g transform="translate(28 22)">
     <rect width="1144" height="54" rx="12" fill="#0D0F13" stroke="#1C2026"/>
-    <rect x="14" y="13" width="28" height="28" rx="7" fill="#11151B" stroke="#E30613" stroke-opacity=".78"/>
+    <rect x="14" y="13" width="28" height="28" rx="7" fill="#11151B" stroke="#E30613" stroke-opacity=".76"/>
     <path d="M20 33L26 19H30L36 33" fill="none" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     <text x="54" y="35" fill="#FFFFFF" font-size="19" font-weight="820">VAGTechNL</text>
     <text x="186" y="34" class="mono" fill="#6F7682" font-size="10" letter-spacing="1.45">TECHNIEK · KENNIS · COMMUNITY</text>
-    <g transform="translate(808 0)" font-size="10.5" font-weight="760" letter-spacing=".65">
-      <text x="0" y="33" fill="#FFFFFF">FORUM</text><text x="74" y="33" fill="#A7ADB7">KENNISBANK</text><text x="176" y="33" fill="#A7ADB7">CODEGARAGE</text><text x="285" y="33" fill="#A7ADB7">TOOLS</text><path d="M0 52H38" stroke="#E30613" stroke-width="2"/>
-    </g>
+    <g transform="translate(808)" font-size="10.5" font-weight="760" letter-spacing=".65"><text x="0" y="33" fill="#FFFFFF">FORUM</text><text x="74" y="33" fill="#A7ADB7">KENNISBANK</text><text x="176" y="33" fill="#A7ADB7">CODEGARAGE</text><text x="285" y="33" fill="#A7ADB7">TOOLS</text><path d="M0 52H38" stroke="#E30613" stroke-width="2"/></g>
   </g>
 
-  <g transform="translate(52 120)">
+  <g transform="translate(52 118)">
     <path d="M0 0H26" stroke="#E30613" stroke-width="2.5"/>
-    <text x="38" y="4" class="mono" fill="#A7ADB7" font-size="11" font-weight="720" letter-spacing="1.85">VAGTECHNL / TECHNICAL PLATFORM</text>
-    <text x="0" y="64" fill="#FFFFFF" font-size="50" font-weight="840" letter-spacing="-1.9">Engineering first.</text>
-    <text x="0" y="119" fill="#FFFFFF" font-size="50" font-weight="840" letter-spacing="-1.9">Evidence over assumptions.</text>
-    <text x="0" y="160" fill="#A7ADB7" font-size="16.5">Forum-first community, durable knowledge and technical tooling.</text>
-    <text x="0" y="187" fill="#6F7682" font-size="13">Volkswagen Group · diagnostics · coding · retrofits · software</text>
-    <g transform="translate(0 225)">
-      <rect width="102" height="28" rx="7" fill="#11151B" stroke="#252A32"/><text x="51" y="18" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5" font-weight="700">FORUM FIRST</text>
-      <g transform="translate(114)"><rect width="122" height="28" rx="7" fill="#11151B" stroke="#252A32"/><text x="61" y="18" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5" font-weight="700">EVIDENCE DRIVEN</text></g>
-      <g transform="translate(248)"><rect width="140" height="28" rx="7" fill="#11151B" stroke="#252A32"/><text x="70" y="18" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5" font-weight="700">UNKNOWN STAYS UNKNOWN</text></g>
+    <text x="38" y="4" class="mono" fill="#A7ADB7" font-size="11" font-weight="720" letter-spacing="1.85">TECHNICAL VAG PLATFORM</text>
+    <text x="0" y="63" fill="#FFFFFF" font-size="49" font-weight="840" letter-spacing="-1.8">Engineering first.</text>
+    <text x="0" y="117" fill="#FFFFFF" font-size="49" font-weight="840" letter-spacing="-1.8">Evidence over assumptions.</text>
+    <text x="0" y="157" fill="#A7ADB7" font-size="16.5">Forum-first community, durable knowledge and technical tooling.</text>
+    <text x="0" y="184" fill="#6F7682" font-size="13">Volkswagen Group · diagnostics · coding · retrofits · software</text>
+    <g transform="translate(0 222)">
+      <rect width="100" height="28" rx="7" fill="#11151B" stroke="#252A32"/><text x="50" y="18" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5">FORUM FIRST</text>
+      <g transform="translate(112)"><rect width="122" height="28" rx="7" fill="#11151B" stroke="#252A32"/><text x="61" y="18" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5">EVIDENCE DRIVEN</text></g>
+      <g transform="translate(246)"><rect width="140" height="28" rx="7" fill="#11151B" stroke="#252A32"/><text x="70" y="18" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5">UNKNOWN STAYS UNKNOWN</text></g>
     </g>
   </g>
 
   <g>
-    <ellipse cx="908" cy="353" rx="250" ry="20" fill="#050608" opacity=".94"/>
-    <path d="M651 312C674 278 710 249 755 232L822 206C858 193 913 194 949 206L1007 228L1053 266L1125 287C1145 293 1155 309 1154 331L1153 347H652Z" fill="url(#body)" stroke="#3A414B" stroke-width="1.2"/>
-    <path d="M782 224C823 204 869 201 913 205C942 207 970 215 996 228L1030 258L734 258L782 224Z" fill="url(#glass)" stroke="#343C46"/>
-    <path d="M791 225C819 211 848 206 875 206L866 258H749Z" fill="#0A0E12" opacity=".96"/>
-    <path d="M884 206C927 207 960 214 991 229L1025 258H876Z" fill="#11171D" opacity=".94"/>
-    <path d="M748 264L1032 264L1061 279L722 279Z" fill="url(#bonnet)" opacity=".9"/>
-    <path d="M715 290C778 272 850 269 921 273C993 276 1059 288 1127 307" fill="none" stroke="#454D58" stroke-width="1.3" opacity=".72"/>
-    <path d="M681 316C758 296 848 292 933 296C1004 299 1073 308 1139 324" fill="none" stroke="#171B21" stroke-width="1.5"/>
-    <path d="M675 327H1144" stroke="#090C10" stroke-width="12" opacity=".7"/>
+    <ellipse cx="905" cy="352" rx="250" ry="19" fill="#040506" opacity=".94"/>
+    <!-- Compact 6C proportions: short bonnet, upright cabin, tight hatch -->
+    <path d="M653 316C677 285 711 261 752 247L817 218C853 202 907 202 943 216L984 233L1027 265L1108 286C1138 294 1153 310 1151 334L1150 346H654Z" fill="url(#body)" stroke="#39414B" stroke-width="1.2"/>
+    <path d="M782 232C813 214 852 208 890 210C922 211 949 218 972 231L1007 258H744L782 232Z" fill="url(#glass)" stroke="#333B45"/>
+    <path d="M790 232C815 219 839 214 863 214L856 258H757Z" fill="#0A0E12"/><path d="M872 211C911 212 942 219 968 233L1001 258H864Z" fill="#12181E"/>
+    <path d="M736 265H1021L1050 280H713Z" fill="url(#hood)" opacity=".96"/>
+    <path d="M694 295C762 275 840 272 915 276C985 280 1054 292 1123 309" fill="none" stroke="#444C57" stroke-width="1.2" opacity=".74"/>
+    <path d="M680 319C750 301 837 297 920 301C995 304 1068 314 1138 328" fill="none" stroke="#161A20" stroke-width="1.5"/>
 
-    <path d="M678 300L726 284L765 287L730 305Z" fill="#C7D0D9" opacity=".16" stroke="#69727D" stroke-width=".8"/>
-    <path d="M1056 281L1110 296L1132 309L1082 301Z" fill="#C7D0D9" opacity=".13" stroke="#69727D" stroke-width=".8"/>
-    <path d="M688 298L727 286" stroke="#FFFFFF" stroke-opacity=".55" stroke-width="1.3"/>
-    <path d="M1081 289L1120 301" stroke="#FFFFFF" stroke-opacity=".46" stroke-width="1.2"/>
+    <!-- 6C-style narrow headlights and grille -->
+    <path d="M679 301L724 286L771 289L738 307Z" fill="#CBD4DE" opacity=".16" stroke="#717A85" stroke-width=".9"/>
+    <path d="M1030 280L1092 294L1124 309L1071 301Z" fill="#CBD4DE" opacity=".14" stroke="#717A85" stroke-width=".9"/>
+    <path d="M692 299L728 288" stroke="#FFFFFF" stroke-opacity=".48" stroke-width="1.2"/><path d="M1070 289L1111 301" stroke="#FFFFFF" stroke-opacity=".4" stroke-width="1.2"/>
+    <path d="M740 307H1045" stroke="#0D1014" stroke-width="8"/>
+    <path d="M758 307H1018" stroke="#E30613" stroke-width="2.2"/>
+    <circle cx="889" cy="307" r="12" fill="#151A20" stroke="#3E4651"/><path d="M883 307H895M889 301V313" stroke="#8A939D" stroke-width="1"/>
+    <rect x="975" y="298" width="31" height="14" rx="3" fill="#11151B" stroke="#E30613" stroke-opacity=".58"/><text x="990.5" y="308.5" class="mono" text-anchor="middle" fill="#FF6B73" font-size="8.3" font-weight="800">GTI</text>
+    <path d="M735 320H1054" stroke="#0A0D10" stroke-width="14"/><path d="M785 320H1004" stroke="#20262D" stroke-width="1.1" stroke-dasharray="3 4"/>
 
-    <path d="M726 307H1050" stroke="#11151A" stroke-width="7"/>
-    <path d="M753 307H994" stroke="#E30613" stroke-width="2.4"/>
-    <rect x="972" y="298" width="33" height="14" rx="3" fill="#12161B" stroke="#E30613" stroke-opacity=".55"/>
-    <text x="988.5" y="308.5" class="mono" text-anchor="middle" fill="#FF6B73" font-size="8.5" font-weight="800">GTI</text>
+    <!-- subtle bumper/fog-light cues -->
+    <circle cx="720" cy="322" r="7" fill="#11151B" stroke="#3B434D"/><circle cx="1080" cy="318" r="7" fill="#11151B" stroke="#3B434D"/>
+    <path d="M698 331C715 326 730 324 748 323M1035 323C1064 325 1091 329 1118 335" stroke="#272D35" fill="none"/>
 
-    <path d="M838 279V336M1008 278L1021 337" stroke="#080A0D" stroke-width="1.2" opacity=".9"/>
-    <path d="M820 286L839 282M990 282L1009 286" stroke="#3C434D" stroke-width="1"/>
-    <circle cx="778" cy="340" r="35" fill="url(#wheel)" stroke="#2F353E" stroke-width="4"/><circle cx="778" cy="340" r="15" fill="#11151B" stroke="#4A525D" stroke-width="2.5"/><path d="M778 326V354M764 340H792M768 330L788 350M788 330L768 350" stroke="#737D88" stroke-opacity=".5" stroke-width="1"/>
-    <circle cx="1060" cy="340" r="35" fill="url(#wheel)" stroke="#2F353E" stroke-width="4"/><circle cx="1060" cy="340" r="15" fill="#11151B" stroke="#4A525D" stroke-width="2.5"/><path d="M1060 326V354M1046 340H1074M1050 330L1070 350M1070 330L1050 350" stroke="#737D88" stroke-opacity=".5" stroke-width="1"/>
-    <path d="M658 334C684 334 712 335 741 338M814 341H1023M1097 338C1117 336 1135 336 1152 337" fill="none" stroke="#252A32"/>
-    <path d="M1018 267C1014 260 1008 255 1001 250" stroke="#5A626E" stroke-width="1.2" fill="none"/>
-    <path d="M818 213C812 211 803 211 796 214" stroke="#5A626E" stroke-width="1.2" fill="none"/>
+    <!-- wheels -->
+    <circle cx="774" cy="342" r="34" fill="url(#wheel)" stroke="#303740" stroke-width="4"/><circle cx="774" cy="342" r="15" fill="#11151B" stroke="#4D5661" stroke-width="2.3"/><path d="M774 328V356M760 342H788M764 332L784 352M784 332L764 352" stroke="#707A85" stroke-opacity=".5" stroke-width="1"/>
+    <circle cx="1053" cy="342" r="34" fill="url(#wheel)" stroke="#303740" stroke-width="4"/><circle cx="1053" cy="342" r="15" fill="#11151B" stroke="#4D5661" stroke-width="2.3"/><path d="M1053 328V356M1039 342H1067M1043 332L1063 352M1063 332L1043 352" stroke="#707A85" stroke-opacity=".5" stroke-width="1"/>
+    <path d="M657 337C683 336 711 336 738 339M808 342H1018M1087 339C1110 337 1131 337 1149 338" stroke="#252A32" fill="none"/>
 
-    <g class="motion" clip-path="url(#carClip)">
-      <rect x="658" y="196" width="1.6" height="152" fill="#FF6B73" opacity="0"><animate attributeName="x" values="658;1145" dur="8.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.36;.36;0" keyTimes="0;.08;.9;1" dur="8.8s" repeatCount="indefinite"/></rect>
-      <rect x="658" y="196" width="34" height="152" fill="#E30613" opacity="0"><animate attributeName="x" values="624;1111" dur="8.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.026;.026;0" keyTimes="0;.08;.9;1" dur="8.8s" repeatCount="indefinite"/></rect>
+    <!-- VAGTechNL plate; avoids pretending to be OEM photography -->
+    <rect x="842" y="326" width="110" height="18" rx="3" fill="#E6E8EB" opacity=".92"/><text x="897" y="338.5" class="mono" text-anchor="middle" fill="#090B0F" font-size="8.5" font-weight="800" letter-spacing=".8">VAGTECHNL</text>
+
+    <g class="motion">
+      <rect x="660" y="205" width="1.5" height="144" fill="#FF6B73" opacity="0"><animate attributeName="x" values="660;1142" dur="9s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;.34;.34;0" keyTimes="0;.08;.9;1" dur="9s" repeatCount="indefinite"/></rect>
     </g>
-  </g>
-
-  <g transform="translate(936 94)">
-    <rect width="214" height="92" rx="10" fill="#090B0F" fill-opacity=".94" stroke="#1C2026"/>
-    <text x="14" y="20" class="mono" fill="#6F7682" font-size="9.2" letter-spacing="1.1">HERO VEHICLE</text>
-    <text x="14" y="44" fill="#FFFFFF" font-size="13.5" font-weight="800">Polo 6C GTI</text>
-    <text x="14" y="63" fill="#A7ADB7" font-size="10.5">visual signature · not technical evidence</text>
-    <path d="M14 72H200" stroke="#1C2026"/>
-    <text x="14" y="85" class="mono" fill="#E30613" font-size="8.5">VAGTECHNL / 2.5D</text>
   </g>
 </g>
 
-<text x="52" y="404" class="mono" fill="#4F5661" font-size="9.5" letter-spacing="1">FOR DRIVERS | BY ENTHUSIASTS</text>
-<text x="1148" y="404" class="mono" fill="#4F5661" font-size="9.5" text-anchor="end" letter-spacing="1">KNOWLEDGE DRIVES FURTHER</text>
+<text x="52" y="394" class="mono" fill="#4F5661" font-size="9.5" letter-spacing="1">FOR DRIVERS | BY ENTHUSIASTS</text>
+<text x="1148" y="394" class="mono" fill="#4F5661" font-size="9.5" text-anchor="end" letter-spacing="1">KNOWLEDGE DRIVES FURTHER</text>
 </svg>

@@ -1,49 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="410" viewBox="0 0 1200 410" role="img" aria-labelledby="title desc">
-<title id="title">VAGTechNL platform systems</title><desc id="desc">Premium product map connecting Forum, Knowledge Base, CodeGarage, Garage and Tools inside one technical platform.</desc>
-<defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06080B"/><stop offset=".7" stop-color="#090B0F"/><stop offset="1" stop-color="#11151B"/></linearGradient>
-  <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#151A21"/><stop offset="1" stop-color="#0D0F13"/></linearGradient>
-  <linearGradient id="active" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1A2029"/><stop offset="1" stop-color="#101319"/></linearGradient>
-  <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E30613" stop-opacity="0"/><stop offset=".5" stop-color="#E30613" stop-opacity=".45"/><stop offset="1" stop-color="#E30613" stop-opacity="0"/></linearGradient>
-  <style>.sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}@media(prefers-reduced-motion:reduce){.motion{display:none}}</style>
-</defs>
-<rect width="1200" height="410" rx="22" fill="url(#bg)"/><rect x="1" y="1" width="1198" height="408" rx="21" fill="none" stroke="#1C2026" stroke-width="2"/>
-<rect x="880" y="74" width="3" height="278" fill="url(#beam)" opacity=".55"/>
-<g class="sans">
-  <g transform="translate(42 38)"><path d="M0 0H24" stroke="#E30613" stroke-width="2.5"/><text x="36" y="4" class="mono" fill="#A7ADB7" font-size="11" font-weight="720" letter-spacing="1.75">PLATFORM SYSTEMS</text><text x="0" y="48" fill="#FFFFFF" font-size="29" font-weight="840">One platform. Five connected technical contexts.</text><text x="0" y="77" fill="#6F7682" font-size="14">Discussion stays human. Knowledge stays traceable. Technical data stays controlled.</text></g>
-
-  <g transform="translate(42 145)">
-    <rect width="1116" height="218" rx="15" fill="#0B0E12" stroke="#1C2026"/>
-    <g transform="translate(18 18)">
-      <rect width="344" height="182" rx="12" fill="url(#active)" stroke="#E30613" stroke-opacity=".46"/>
-      <rect width="4" height="182" rx="2" fill="#E30613"/>
-      <text x="22" y="26" class="mono" fill="#FF6B73" font-size="9.5" letter-spacing="1.2">01 / PRIMARY ENTRY</text>
-      <text x="22" y="61" fill="#FFFFFF" font-size="26" font-weight="840">Forum</text>
-      <text x="22" y="91" fill="#A7ADB7" font-size="13.5">Technical questions, real cases, discussion</text><text x="22" y="112" fill="#A7ADB7" font-size="13.5">and reusable community experience.</text>
-      <path d="M22 136H318" stroke="#252A32"/>
-      <text x="22" y="160" class="mono" fill="#6F7682" font-size="9.5">FORUM-FIRST · SEARCHABLE · CONTEXTUAL</text>
-      <circle cx="308" cy="33" r="12" fill="#11151B" stroke="#E30613" stroke-opacity=".7"/><path d="M302 31H314M302 36H310" stroke="#FF6B73" stroke-width="1.4" stroke-linecap="round"/>
-    </g>
-
-    <g transform="translate(388 18)">
-      <path d="M0 91H42M278 45H322M278 137H322" stroke="#252A32" stroke-width="2"/>
-      <circle cx="21" cy="91" r="3.5" fill="#E30613"/><circle cx="300" cy="45" r="3.5" fill="#E30613" opacity=".72"/><circle cx="300" cy="137" r="3.5" fill="#E30613" opacity=".5"/>
-      <circle class="motion" r="4" fill="#FF6B73" opacity="0"><animate attributeName="opacity" values="0;.9;.9;0;0" keyTimes="0;.08;.72;.78;1" dur="7s" repeatCount="indefinite"/><animateMotion path="M0 91 L322 45" dur="7s" repeatCount="indefinite"/></circle>
-
-      <g transform="translate(42 0)"><rect width="236" height="82" rx="11" fill="url(#panel)" stroke="#1C2026"/><text x="18" y="24" class="mono" fill="#6F7682" font-size="9.5">02 / EVIDENCE</text><text x="18" y="49" fill="#FFFFFF" font-size="18" font-weight="820">Knowledge Base</text><text x="18" y="68" fill="#A7ADB7" font-size="11.5">Durable, source-aware technical knowledge.</text></g>
-      <g transform="translate(42 100)"><rect width="236" height="82" rx="11" fill="url(#panel)" stroke="#1C2026"/><text x="18" y="24" class="mono" fill="#6F7682" font-size="9.5">03 / TECHNICAL DATA</text><text x="18" y="49" fill="#FFFFFF" font-size="18" font-weight="820">CodeGarage</text><text x="18" y="68" fill="#A7ADB7" font-size="11.5">Controlled coding and reference context.</text></g>
-      <g transform="translate(322 0)"><rect width="216" height="82" rx="11" fill="url(#panel)" stroke="#1C2026"/><text x="18" y="24" class="mono" fill="#6F7682" font-size="9.5">04 / VEHICLE CONTEXT</text><text x="18" y="49" fill="#FFFFFF" font-size="18" font-weight="820">Garage</text><text x="18" y="68" fill="#A7ADB7" font-size="11.5">Reusable vehicle context.</text></g>
-      <g transform="translate(322 100)"><rect width="216" height="82" rx="11" fill="url(#panel)" stroke="#1C2026"/><text x="18" y="24" class="mono" fill="#6F7682" font-size="9.5">05 / WORKFLOW</text><text x="18" y="49" fill="#FFFFFF" font-size="18" font-weight="820">Tools</text><text x="18" y="68" fill="#A7ADB7" font-size="11.5">Focused technical utilities.</text></g>
-    </g>
-
-    <g transform="translate(952 18)">
-      <rect width="146" height="182" rx="12" fill="#0D0F13" stroke="#1C2026"/>
-      <text x="16" y="25" class="mono" fill="#6F7682" font-size="9.2">SHARED RULE</text>
-      <text x="16" y="56" fill="#FFFFFF" font-size="16" font-weight="820">Context</text><text x="16" y="77" fill="#FFFFFF" font-size="16" font-weight="820">travels.</text>
-      <path d="M16 96H130" stroke="#252A32"/>
-      <text x="16" y="120" fill="#A7ADB7" font-size="11.5">Truth does not</text><text x="16" y="138" fill="#A7ADB7" font-size="11.5">change with the</text><text x="16" y="156" fill="#A7ADB7" font-size="11.5">surface.</text>
-      <circle cx="123" cy="21" r="4" fill="#E30613"/>
-    </g>
-  </g>
-</g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+<title id="title">VAGTechNL platform systems</title><desc id="desc">Compact product map for Forum, Knowledge Base, CodeGarage, Garage and Tools.</desc>
+<rect width="1200" height="390" rx="22" fill="#06080B"/><rect x="1" y="1" width="1198" height="388" rx="21" fill="none" stroke="#1C2026" stroke-width="2"/>
+<rect x="1082" y="26" width="3" height="300" rx="1.5" fill="#E30613" opacity=".08"/><rect x="1100" y="70" width="1.5" height="200" fill="#FF6B73" opacity=".16"/><g font-family="Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+<g transform="translate(42 40)"><path d="M0 0H22" stroke="#E30613" stroke-width="2"/><text x="34" y="4" fill="#A7ADB7" font-size="11" font-weight="750" letter-spacing="1.8">PLATFORM SYSTEMS</text><text x="0" y="50" fill="#FFFFFF" font-size="28" font-weight="820">One platform. Technical context stays connected.</text><text x="0" y="78" fill="#6F7682" font-size="14">Forum-first where discussion belongs. Structured knowledge where evidence matters.</text></g>
+<g transform="translate(42 145)"><rect width="1116" height="202" rx="14" fill="#0B0E12" stroke="#1C2026"/><path d="M558 18V184" stroke="#1C2026"/>
+<g transform="translate(18 18)"><g><rect width="522" height="48" rx="10" fill="#12161C" stroke="#E30613" stroke-opacity=".48"/><rect width="3" height="48" rx="1.5" fill="#E30613"/><text x="20" y="20" fill="#FFFFFF" font-size="15" font-weight="800">Forum</text><text x="142" y="20" fill="#A7ADB7" font-size="12.5">technical questions, cases and community discussion</text><text x="20" y="38" fill="#6F7682" font-size="10.5">COMMUNITY / FIRST CONTACT</text></g><g transform="translate(0 59)"><rect width="522" height="48" rx="10" fill="#12161C" stroke="#1C2026"/><text x="20" y="20" fill="#E6E8EB" font-size="15" font-weight="800">Knowledge Base</text><text x="142" y="20" fill="#A7ADB7" font-size="12.5">durable, source-aware technical knowledge</text><text x="20" y="38" fill="#6F7682" font-size="10.5">EVIDENCE / TRACEABILITY</text></g><g transform="translate(0 118)"><rect width="522" height="48" rx="10" fill="#12161C" stroke="#1C2026"/><text x="20" y="20" fill="#E6E8EB" font-size="15" font-weight="800">CodeGarage</text><text x="142" y="20" fill="#A7ADB7" font-size="12.5">structured coding and technical reference context</text><text x="20" y="38" fill="#6F7682" font-size="10.5">TECHNICAL DATA / CONTROLLED PUBLICATION</text></g></g>
+<g transform="translate(594 18)"><g><rect width="504" height="77" rx="10" fill="#12161C" stroke="#1C2026"/><text x="20" y="27" fill="#E6E8EB" font-size="15" font-weight="800">Garage</text><text x="20" y="49" fill="#A7ADB7" font-size="12.5">Reusable vehicle context for relevant platform flows.</text><text x="20" y="66" fill="#6F7682" font-size="10.5">VEHICLE CONTEXT</text></g><g transform="translate(0 89)"><rect width="504" height="77" rx="10" fill="#12161C" stroke="#1C2026"/><text x="20" y="27" fill="#E6E8EB" font-size="15" font-weight="800">Tools</text><text x="20" y="49" fill="#A7ADB7" font-size="12.5">Focused utilities around technical work and search.</text><text x="20" y="66" fill="#6F7682" font-size="10.5">UTILITY / WORKFLOW</text></g></g></g></g></svg>
