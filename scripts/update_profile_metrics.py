@@ -32,9 +32,9 @@ COLORS = {
     "secondary": "#A7ADB7",
     "muted": "#6F7682",
     "strong": "#FFFFFF",
-    "red": "#E10600",
-    "red_dark": "#B80500",
-    "red_bright": "#FF2A23",
+    "red": "#E30613",
+    "red_dark": "#B8000C",
+    "red_bright": "#FF6B73",
 }
 
 LANGUAGE_COLORS = [
@@ -311,8 +311,8 @@ def render_desktop(
     </style>
   </defs>
 
-  <rect width="1200" height="360" rx="24" fill="url(#surface)"/>
-  <rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="{COLORS['border']}" stroke-width="2"/>
+  <rect width="1200" height="360" rx="18" fill="url(#surface)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="17" fill="none" stroke="{COLORS['border']}" stroke-width="2"/>
   <path d="M38 1H150" stroke="{COLORS['red']}" stroke-width="2" stroke-linecap="round" opacity=".72"/>
 
   <g transform="translate(38 30)" class="sans">
@@ -374,8 +374,8 @@ def render_mobile(
     </style>
   </defs>
 
-  <rect width="640" height="{total_height}" rx="24" fill="url(#surface)"/>
-  <rect x="1" y="1" width="638" height="{total_height - 2}" rx="23" fill="none" stroke="{COLORS['border']}" stroke-width="2"/>
+  <rect width="640" height="{total_height}" rx="18" fill="url(#surface)"/>
+  <rect x="1" y="1" width="638" height="{total_height - 2}" rx="17" fill="none" stroke="{COLORS['border']}" stroke-width="2"/>
   <path d="M32 1H132" stroke="{COLORS['red']}" stroke-width="2" stroke-linecap="round" opacity=".72"/>
 
   <g transform="translate(32 30)" class="sans">
