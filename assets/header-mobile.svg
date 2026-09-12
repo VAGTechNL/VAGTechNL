@@ -1,49 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="650" viewBox="0 0 640 650" role="img" aria-labelledby="title desc">
 <title id="title">VAGTechNL mobile GitHub profile hero</title>
-<desc id="desc">Mobile VAGTechNL hero with a large 2D technical Polo 6C GTI-inspired hatchback and a restrained body scan animation.</desc>
+<desc id="desc">Mobile VAGTechNL hero with a large reference-driven 2D Polo 6C GTI-inspired hatchback and restrained scan animation.</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#06080B"/><stop offset=".68" stop-color="#090B0F"/><stop offset="1" stop-color="#10141A"/></linearGradient>
-  <linearGradient id="body" x1="0" y1="0" x2="1" y2=".84"><stop offset="0" stop-color="#39414B"/><stop offset=".3" stop-color="#252B33"/><stop offset=".64" stop-color="#151A20"/><stop offset="1" stop-color="#090C10"/></linearGradient>
-  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2B3742"/><stop offset=".54" stop-color="#151B22"/><stop offset="1" stop-color="#090C10"/></linearGradient>
-  <linearGradient id="scanBand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E30613" stop-opacity="0"/><stop offset=".4" stop-color="#E30613" stop-opacity=".025"/><stop offset=".5" stop-color="#FF6B73" stop-opacity=".12"/><stop offset=".53" stop-color="#FFFFFF" stop-opacity=".2"/><stop offset=".6" stop-color="#E30613" stop-opacity=".04"/><stop offset="1" stop-color="#E30613" stop-opacity="0"/></linearGradient>
-  <radialGradient id="wheel" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#343C46"/><stop offset=".34" stop-color="#1A2026"/><stop offset=".42" stop-color="#090B0E"/><stop offset="1" stop-color="#050607"/></radialGradient>
-  <clipPath id="scanClip" clipPathUnits="userSpaceOnUse"><path d="M18 292C26 270 43 256 71 247L142 226C163 220 177 211 192 195L229 160C252 139 287 129 328 129H389C426 129 454 137 476 155L512 189C525 201 536 214 545 230L558 253C563 263 564 276 562 289L559 306H20Z"/><circle cx="142" cy="309" r="39"/><circle cx="454" cy="309" r="39"/></clipPath>
+  <linearGradient id="body" x1="0" y1="0" x2="1" y2=".88"><stop offset="0" stop-color="#414A55"/><stop offset=".22" stop-color="#2C333C"/><stop offset=".58" stop-color="#191E24"/><stop offset="1" stop-color="#0A0D11"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2D3944"/><stop offset=".52" stop-color="#151B22"/><stop offset="1" stop-color="#090C10"/></linearGradient>
+  <linearGradient id="scanBand" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E30613" stop-opacity="0"/><stop offset=".38" stop-color="#E30613" stop-opacity=".02"/><stop offset=".5" stop-color="#FFFFFF" stop-opacity=".22"/><stop offset=".56" stop-color="#FF6B73" stop-opacity=".09"/><stop offset="1" stop-color="#E30613" stop-opacity="0"/></linearGradient>
+  <radialGradient id="wheel" cx="50%" cy="45%" r="55%"><stop offset="0" stop-color="#3B444E"/><stop offset=".34" stop-color="#1A2026"/><stop offset=".42" stop-color="#090B0E"/><stop offset="1" stop-color="#050607"/></radialGradient>
+  <clipPath id="scanClip" clipPathUnits="userSpaceOnUse"><path d="M18 270C26 252 42 241 68 234L128 216C148 210 165 201 180 184L223 148C244 130 273 121 312 121L386 121C420 121 446 129 466 145L504 178C520 193 532 211 540 230L553 249C559 259 561 270 559 284L556 301L20 301Z"/><circle cx="141" cy="305" r="41"/><circle cx="456" cy="305" r="41"/></clipPath>
   <style>.sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}@media(prefers-reduced-motion:reduce){.scan-motion{display:none}}</style>
 </defs>
-
 <rect width="640" height="650" rx="22" fill="url(#bg)"/><rect x="1" y="1" width="638" height="648" rx="21" fill="none" stroke="#1C2026" stroke-width="2"/>
 
 <g class="sans">
   <g transform="translate(22 20)"><rect width="596" height="56" rx="11" fill="#0D0F13" stroke="#1C2026"/><rect x="14" y="14" width="28" height="28" rx="7" fill="#11151B" stroke="#E30613" stroke-opacity=".76"/><path d="M20 34L26 20H30L36 34" fill="none" stroke="#E30613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><text x="54" y="36" fill="#FFFFFF" font-size="20" font-weight="820">VAGTechNL</text><text x="572" y="34" class="mono" text-anchor="end" fill="#6F7682" font-size="9.2">TECHNIEK · KENNIS · COMMUNITY</text></g>
-
   <g transform="translate(34 112)"><path d="M0 0H24" stroke="#E30613" stroke-width="2.5"/><text x="36" y="4" class="mono" fill="#A7ADB7" font-size="10.5" font-weight="720" letter-spacing="1.55">TECHNICAL VAG PLATFORM</text><text x="0" y="58" fill="#FFFFFF" font-size="42" font-weight="840" letter-spacing="-1.4">Engineering first.</text><text x="0" y="105" fill="#FFFFFF" font-size="42" font-weight="840" letter-spacing="-1.4">Evidence over assumptions.</text><text x="0" y="142" fill="#A7ADB7" font-size="15.5">Forum-first community, durable knowledge</text><text x="0" y="166" fill="#A7ADB7" font-size="15.5">and technical tooling.</text></g>
 
-  <!-- mobile car is intentionally lower and larger; no red rails or crosshair -->
   <g transform="translate(28 250) scale(1.04)">
-    <ellipse cx="293" cy="331" rx="270" ry="17" fill="#040506" opacity=".92"/>
-    <path d="M18 292C26 270 43 256 71 247L142 226C163 220 177 211 192 195L229 160C252 139 287 129 328 129H389C426 129 454 137 476 155L512 189C525 201 536 214 545 230L558 253C563 263 564 276 562 289L559 306H20Z" fill="url(#body)" stroke="#414A55" stroke-width="1.4"/>
-    <path d="M194 195L232 162C253 145 284 137 326 137H387C418 137 443 144 462 159L499 195Z" fill="url(#glass)" stroke="#333C46" stroke-width="1.1"/>
-    <path d="M241 164C261 150 287 144 320 144H339L333 195H208Z" fill="#0A0E12"/><path d="M348 144H385C411 144 432 150 449 162L486 195H341Z" fill="#11171D"/>
-    <path d="M339 137L333 306M425 145L444 306" stroke="#080A0D" stroke-width="3"/>
-    <path d="M240 203L231 303M343 202L338 303M432 202L449 303" stroke="#343C46" stroke-width="1.1"/>
-    <path d="M185 214C236 201 300 198 364 199C430 200 489 208 535 226" fill="none" stroke="#4A5460" stroke-width="1.2" opacity=".76"/>
-    <path d="M23 280L61 260L126 238L166 229" fill="none" stroke="#505A65" stroke-width="1.2"/>
-    <path d="M29 273L67 260L105 263L75 279Z" fill="#D2DAE2" opacity=".16" stroke="#707A85" stroke-width=".9"/><path d="M37 272L69 262" stroke="#FFFFFF" stroke-opacity=".47" stroke-width="1.2"/>
-    <path d="M47 280H126" stroke="#11151A" stroke-width="7"/><path d="M53 280H116" stroke="#E30613" stroke-width="1.8"/>
-    <path d="M497 195L521 220L541 238L554 257" fill="none" stroke="#59636F" stroke-width="1.2"/><path d="M529 231L551 241L558 258L540 256Z" fill="#E30613" opacity=".5" stroke="#FF6B73" stroke-opacity=".45" stroke-width=".8"/>
-    <path d="M198 204L180 210L198 214L218 211L214 205Z" fill="#252C34" stroke="#5B6570" stroke-width=".8"/>
-    <rect x="289" y="219" width="28" height="5" rx="2.5" fill="#272E37" stroke="#59636F" stroke-width=".6"/><rect x="407" y="219" width="28" height="5" rx="2.5" fill="#272E37" stroke="#59636F" stroke-width=".6"/>
-    <rect x="133" y="228" width="29" height="13" rx="3" fill="#11151B" stroke="#E30613" stroke-opacity=".58"/><text x="147.5" y="237.5" class="mono" text-anchor="middle" fill="#FF6B73" font-size="7.8" font-weight="800">GTI</text>
-    <path d="M76 299H528" stroke="#232A32" stroke-width="8" opacity=".84"/><path d="M24 306C61 306 82 307 102 309M182 310H415M494 309C518 307 539 306 559 306" fill="none" stroke="#252A32"/>
-    <circle cx="142" cy="309" r="39" fill="url(#wheel)" stroke="#303740" stroke-width="4.5"/><circle cx="142" cy="309" r="17" fill="#11151B" stroke="#505A65" stroke-width="2.4"/>
-    <circle cx="454" cy="309" r="39" fill="url(#wheel)" stroke="#303740" stroke-width="4.5"/><circle cx="454" cy="309" r="17" fill="#11151B" stroke="#505A65" stroke-width="2.4"/>
+    <ellipse cx="292" cy="329" rx="270" ry="17" fill="#040506" opacity=".92"/>
+    <path d="M18 270C26 252 42 241 68 234L128 216C148 210 165 201 180 184L223 148C244 130 273 121 312 121L386 121C420 121 446 129 466 145L504 178C520 193 532 211 540 230L553 249C559 259 561 270 559 284L556 301L20 301Z" fill="url(#body)" stroke="#46505B" stroke-width="1.5"/>
+    <path d="M187 185L226 151C247 136 274 129 309 129H382C408 129 430 135 448 149L487 185Z" fill="url(#glass)" stroke="#36404A" stroke-width="1.1"/>
+    <path d="M235 153C254 141 278 136 307 136H335L329 185H201Z" fill="#0A0E12"/><path d="M344 136H380C402 136 420 141 436 153L474 185H337Z" fill="#11171D"/>
+    <path d="M337 129L330 300M423 138L442 300" stroke="#080A0D" stroke-width="3"/>
+    <path d="M234 194L226 298M341 193L336 298M431 193L448 298" stroke="#343C46" stroke-width="1.1"/>
+    <path d="M175 205C229 192 296 189 363 190C430 191 489 199 535 218" fill="none" stroke="#4C5662" stroke-width="1.2" opacity=".78"/>
+    <path d="M21 259L56 242L119 221L161 214" fill="none" stroke="#56616C" stroke-width="1.25"/>
+    <path d="M27 253L66 241L106 244L77 261Z" fill="#D0D8E0" opacity=".18" stroke="#717B87" stroke-width=".9"/><path d="M35 252L69 242" stroke="#FFFFFF" stroke-opacity=".48" stroke-width="1.2"/>
+    <path d="M42 262H123" stroke="#11151A" stroke-width="7"/><path d="M49 262H115" stroke="#E30613" stroke-width="1.8"/>
+    <path d="M487 185L511 207L531 228L548 249" fill="none" stroke="#5D6874" stroke-width="1.2"/><path d="M524 218L548 228L556 248L537 245Z" fill="#E30613" opacity=".52" stroke="#FF6B73" stroke-opacity=".45" stroke-width=".8"/>
+    <path d="M193 194L176 201L193 205L215 202L210 196Z" fill="#252C34" stroke="#5C6672" stroke-width=".8"/>
+    <rect x="285" y="210" width="28" height="5" rx="2.5" fill="#272E37" stroke="#59636F" stroke-width=".6"/><rect x="405" y="210" width="28" height="5" rx="2.5" fill="#272E37" stroke="#59636F" stroke-width=".6"/>
+    <rect x="130" y="218" width="29" height="13" rx="3" fill="#11151B" stroke="#E30613" stroke-opacity=".58"/><text x="144.5" y="227.5" class="mono" text-anchor="middle" fill="#FF6B73" font-size="7.8" font-weight="800">GTI</text>
+    <path d="M73 294H529" stroke="#222932" stroke-width="8" opacity=".84"/><path d="M21 301C58 301 82 302 102 304M183 305H414M495 304C519 302 539 301 556 301" fill="none" stroke="#252A32"/>
+    <circle cx="141" cy="305" r="41" fill="url(#wheel)" stroke="#303740" stroke-width="4.5"/><circle cx="141" cy="305" r="18" fill="#11151B" stroke="#505A65" stroke-width="2.4"/>
+    <circle cx="456" cy="305" r="41" fill="url(#wheel)" stroke="#303740" stroke-width="4.5"/><circle cx="456" cy="305" r="18" fill="#11151B" stroke="#505A65" stroke-width="2.4"/>
 
     <g class="scan-motion" clip-path="url(#scanClip)">
       <g opacity="0">
-        <rect x="-112" y="118" width="92" height="240" fill="url(#scanBand)"/>
-        <rect x="-66" y="118" width="1.25" height="240" fill="#FF6B73" opacity=".6"/>
-        <animateTransform attributeName="transform" type="translate" values="0 0;704 0;704 0" keyTimes="0;.7;1" dur="9s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;.84;.84;0;0" keyTimes="0;.06;.66;.73;1" dur="9s" repeatCount="indefinite"/>
+        <rect x="-115" y="112" width="96" height="236" fill="url(#scanBand)"/>
+        <rect x="-67" y="112" width="1.25" height="236" fill="#FFFFFF" opacity=".5"/>
+        <animateTransform attributeName="transform" type="translate" values="0 0;708 0;708 0" keyTimes="0;.7;1" dur="8.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;.86;.86;0;0" keyTimes="0;.06;.66;.73;1" dur="8.8s" repeatCount="indefinite"/>
       </g>
     </g>
   </g>

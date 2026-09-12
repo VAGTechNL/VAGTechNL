@@ -1,42 +1,60 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
 <title id="title">VAGTechNL GitHub profile hero</title>
-<desc id="desc">Dark premium VAGTechNL hero with a large 2D technical Polo 6C GTI-inspired five-door hatchback and a restrained body scan animation.</desc>
+<desc id="desc">Premium dark VAGTechNL hero with a large 2D technical Volkswagen Polo 6C GTI side-profile study and a restrained scan animation.</desc>
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
     <stop offset="0" stop-color="#06080B"/>
     <stop offset=".66" stop-color="#090B0F"/>
     <stop offset="1" stop-color="#10141A"/>
   </linearGradient>
-  <linearGradient id="body" x1="0" y1="0" x2="1" y2=".84">
-    <stop offset="0" stop-color="#39414B"/>
-    <stop offset=".28" stop-color="#252B33"/>
-    <stop offset=".64" stop-color="#151A20"/>
-    <stop offset="1" stop-color="#090C10"/>
+  <linearGradient id="body" x1="0" y1="0" x2="1" y2=".88">
+    <stop offset="0" stop-color="#414A55"/>
+    <stop offset=".22" stop-color="#2C333C"/>
+    <stop offset=".58" stop-color="#191E24"/>
+    <stop offset="1" stop-color="#0A0D11"/>
+  </linearGradient>
+  <linearGradient id="bodyHi" x1="0" y1="0" x2="1" y2=".7">
+    <stop offset="0" stop-color="#6A7480" stop-opacity=".26"/>
+    <stop offset=".45" stop-color="#A7ADB7" stop-opacity=".08"/>
+    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
   </linearGradient>
   <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#2B3742"/>
-    <stop offset=".54" stop-color="#151B22"/>
+    <stop offset="0" stop-color="#2D3944"/>
+    <stop offset=".52" stop-color="#151B22"/>
     <stop offset="1" stop-color="#090C10"/>
   </linearGradient>
   <linearGradient id="scanBand" x1="0" y1="0" x2="1" y2="0">
     <stop offset="0" stop-color="#E30613" stop-opacity="0"/>
-    <stop offset=".38" stop-color="#E30613" stop-opacity=".025"/>
-    <stop offset=".49" stop-color="#FF6B73" stop-opacity=".13"/>
-    <stop offset=".52" stop-color="#FFFFFF" stop-opacity=".22"/>
-    <stop offset=".55" stop-color="#FF6B73" stop-opacity=".11"/>
-    <stop offset=".7" stop-color="#E30613" stop-opacity=".025"/>
+    <stop offset=".36" stop-color="#E30613" stop-opacity=".02"/>
+    <stop offset=".48" stop-color="#FF6B73" stop-opacity=".08"/>
+    <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".24"/>
+    <stop offset=".52" stop-color="#FF6B73" stop-opacity=".10"/>
+    <stop offset=".68" stop-color="#E30613" stop-opacity=".02"/>
     <stop offset="1" stop-color="#E30613" stop-opacity="0"/>
   </linearGradient>
   <radialGradient id="wheel" cx="50%" cy="45%" r="55%">
-    <stop offset="0" stop-color="#343C46"/>
+    <stop offset="0" stop-color="#3B444E"/>
     <stop offset=".34" stop-color="#1A2026"/>
     <stop offset=".42" stop-color="#090B0E"/>
     <stop offset="1" stop-color="#050607"/>
   </radialGradient>
   <clipPath id="scanClip" clipPathUnits="userSpaceOnUse">
-    <path d="M18 292C26 270 43 256 71 247L142 226C163 220 177 211 192 195L229 160C252 139 287 129 328 129H389C426 129 454 137 476 155L512 189C525 201 536 214 545 230L558 253C563 263 564 276 562 289L559 306H20Z"/>
-    <circle cx="142" cy="309" r="39"/>
-    <circle cx="454" cy="309" r="39"/>
+    <path d="M18 270
+             C26 252 42 241 68 234
+             L128 216
+             C148 210 165 201 180 184
+             L223 148
+             C244 130 273 121 312 121
+             L386 121
+             C420 121 446 129 466 145
+             L504 178
+             C520 193 532 211 540 230
+             L553 249
+             C559 259 561 270 559 284
+             L556 301
+             L20 301 Z"/>
+    <circle cx="141" cy="305" r="41"/>
+    <circle cx="456" cy="305" r="41"/>
   </clipPath>
   <style>
     .sans{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
@@ -71,7 +89,6 @@
     <text x="0" y="117" fill="#FFFFFF" font-size="49" font-weight="840" letter-spacing="-1.8">Evidence over assumptions.</text>
     <text x="0" y="157" fill="#A7ADB7" font-size="16.5">Forum-first community, durable knowledge and technical tooling.</text>
     <text x="0" y="184" fill="#6F7682" font-size="13">Volkswagen Group · diagnostics · coding · retrofits · software</text>
-
     <g transform="translate(0 222)">
       <rect width="100" height="28" rx="7" fill="#11151B" stroke="#252A32"/><text x="50" y="18" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5">FORUM FIRST</text>
       <g transform="translate(112)"><rect width="122" height="28" rx="7" fill="#11151B" stroke="#252A32"/><text x="61" y="18" class="mono" text-anchor="middle" fill="#E6E8EB" font-size="9.5">EVIDENCE DRIVEN</text></g>
@@ -79,65 +96,92 @@
     </g>
   </g>
 
-  <!-- large 2D Polo 6C GTI study; no crosshair or decorative red rails -->
-  <g transform="translate(606 30)">
-    <ellipse cx="293" cy="331" rx="270" ry="17" fill="#040506" opacity=".92"/>
+  <!-- Reference-driven Polo 6C GTI side profile -->
+  <g transform="translate(608 36)">
+    <ellipse cx="292" cy="329" rx="270" ry="17" fill="#040506" opacity=".92"/>
 
-    <path d="M18 292C26 270 43 256 71 247L142 226C163 220 177 211 192 195L229 160C252 139 287 129 328 129H389C426 129 454 137 476 155L512 189C525 201 536 214 545 230L558 253C563 263 564 276 562 289L559 306H20Z"
-          fill="url(#body)" stroke="#414A55" stroke-width="1.4"/>
+    <!-- compact 5-door hatchback silhouette -->
+    <path d="M18 270
+             C26 252 42 241 68 234
+             L128 216
+             C148 210 165 201 180 184
+             L223 148
+             C244 130 273 121 312 121
+             L386 121
+             C420 121 446 129 466 145
+             L504 178
+             C520 193 532 211 540 230
+             L553 249
+             C559 259 561 270 559 284
+             L556 301
+             L20 301 Z"
+          fill="url(#body)" stroke="#46505B" stroke-width="1.5"/>
 
-    <!-- roof and greenhouse -->
-    <path d="M194 195L232 162C253 145 284 137 326 137H387C418 137 443 144 462 159L499 195Z"
-          fill="url(#glass)" stroke="#333C46" stroke-width="1.1"/>
-    <path d="M241 164C261 150 287 144 320 144H339L333 195H208Z" fill="#0A0E12"/>
-    <path d="M348 144H385C411 144 432 150 449 162L486 195H341Z" fill="#11171D"/>
+    <!-- top highlight and shoulder -->
+    <path d="M31 259C85 237 139 219 181 202L223 164C245 144 276 135 314 135H384C415 135 438 142 456 157L493 188"
+          fill="none" stroke="#69737E" stroke-width="1.25" opacity=".62"/>
+    <path d="M46 250C122 225 204 208 287 204C384 200 463 207 531 231"
+          fill="none" stroke="url(#bodyHi)" stroke-width="2.2" opacity=".68"/>
 
-    <!-- hatchback pillars / five-door structure -->
-    <path d="M339 137L333 306M425 145L444 306" stroke="#080A0D" stroke-width="3"/>
-    <path d="M240 203L231 303M343 202L338 303M432 202L449 303" stroke="#343C46" stroke-width="1.1"/>
-    <path d="M185 214C236 201 300 198 364 199C430 200 489 208 535 226" fill="none" stroke="#4A5460" stroke-width="1.2" opacity=".76"/>
+    <!-- greenhouse: flatter roof, upright rear -->
+    <path d="M187 185L226 151
+             C247 136 274 129 309 129
+             H382
+             C408 129 430 135 448 149
+             L487 185Z"
+          fill="url(#glass)" stroke="#36404A" stroke-width="1.1"/>
+    <path d="M235 153C254 141 278 136 307 136H335L329 185H201Z" fill="#0A0E12"/>
+    <path d="M344 136H380C402 136 420 141 436 153L474 185H337Z" fill="#11171D"/>
 
-    <!-- short Polo nose / headlamp -->
-    <path d="M23 280L61 260L126 238L166 229" fill="none" stroke="#505A65" stroke-width="1.2"/>
-    <path d="M29 273L67 260L105 263L75 279Z" fill="#D2DAE2" opacity=".16" stroke="#707A85" stroke-width=".9"/>
-    <path d="M37 272L69 262" stroke="#FFFFFF" stroke-opacity=".47" stroke-width="1.2"/>
-    <path d="M47 280H126" stroke="#11151A" stroke-width="7"/>
-    <path d="M53 280H116" stroke="#E30613" stroke-width="1.8"/>
+    <!-- B/C pillars and doors -->
+    <path d="M337 129L330 300M423 138L442 300" stroke="#080A0D" stroke-width="3"/>
+    <path d="M234 194L226 298M341 193L336 298M431 193L448 298" stroke="#343C46" stroke-width="1.1"/>
+    <path d="M175 205C229 192 296 189 363 190C430 191 489 199 535 218" fill="none" stroke="#4C5662" stroke-width="1.2" opacity=".78"/>
 
-    <!-- upright hatch / rear lamp -->
-    <path d="M497 195L521 220L541 238L554 257" fill="none" stroke="#59636F" stroke-width="1.2"/>
-    <path d="M529 231L551 241L558 258L540 256Z" fill="#E30613" opacity=".5" stroke="#FF6B73" stroke-opacity=".45" stroke-width=".8"/>
+    <!-- short, upright Polo nose -->
+    <path d="M21 259L56 242L119 221L161 214" fill="none" stroke="#56616C" stroke-width="1.25"/>
+    <path d="M27 253L66 241L106 244L77 261Z" fill="#D0D8E0" opacity=".18" stroke="#717B87" stroke-width=".9"/>
+    <path d="M35 252L69 242" stroke="#FFFFFF" stroke-opacity=".48" stroke-width="1.2"/>
+    <path d="M42 262H123" stroke="#11151A" stroke-width="7"/>
+    <path d="M49 262H115" stroke="#E30613" stroke-width="1.8"/>
+
+    <!-- upright rear hatch and lamp -->
+    <path d="M487 185L511 207L531 228L548 249" fill="none" stroke="#5D6874" stroke-width="1.2"/>
+    <path d="M524 218L548 228L556 248L537 245Z" fill="#E30613" opacity=".52" stroke="#FF6B73" stroke-opacity=".45" stroke-width=".8"/>
 
     <!-- mirror, handles, GTI badge -->
-    <path d="M198 204L180 210L198 214L218 211L214 205Z" fill="#252C34" stroke="#5B6570" stroke-width=".8"/>
-    <rect x="289" y="219" width="28" height="5" rx="2.5" fill="#272E37" stroke="#59636F" stroke-width=".6"/>
-    <rect x="407" y="219" width="28" height="5" rx="2.5" fill="#272E37" stroke="#59636F" stroke-width=".6"/>
-    <rect x="133" y="228" width="29" height="13" rx="3" fill="#11151B" stroke="#E30613" stroke-opacity=".58"/>
-    <text x="147.5" y="237.5" class="mono" text-anchor="middle" fill="#FF6B73" font-size="7.8" font-weight="800">GTI</text>
+    <path d="M193 194L176 201L193 205L215 202L210 196Z" fill="#252C34" stroke="#5C6672" stroke-width=".8"/>
+    <rect x="285" y="210" width="28" height="5" rx="2.5" fill="#272E37" stroke="#59636F" stroke-width=".6"/>
+    <rect x="405" y="210" width="28" height="5" rx="2.5" fill="#272E37" stroke="#59636F" stroke-width=".6"/>
+    <rect x="130" y="218" width="29" height="13" rx="3" fill="#11151B" stroke="#E30613" stroke-opacity=".58"/>
+    <text x="144.5" y="227.5" class="mono" text-anchor="middle" fill="#FF6B73" font-size="7.8" font-weight="800">GTI</text>
 
-    <!-- lower body -->
-    <path d="M76 299H528" stroke="#232A32" stroke-width="8" opacity=".84"/>
-    <path d="M24 306C61 306 82 307 102 309M182 310H415M494 309C518 307 539 306 559 306" fill="none" stroke="#252A32"/>
+    <!-- lower body / side skirt -->
+    <path d="M73 294H529" stroke="#222932" stroke-width="8" opacity=".84"/>
+    <path d="M21 301C58 301 82 302 102 304M183 305H414M495 304C519 302 539 301 556 301" fill="none" stroke="#252A32"/>
 
-    <!-- wheels -->
-    <circle cx="142" cy="309" r="39" fill="url(#wheel)" stroke="#303740" stroke-width="4.5"/>
-    <circle cx="142" cy="309" r="17" fill="#11151B" stroke="#505A65" stroke-width="2.4"/>
-    <path d="M142 294V324M127 309H157M131 298L153 320M153 298L131 320" stroke="#7A8590" stroke-opacity=".56" stroke-width="1.1"/>
-    <circle cx="454" cy="309" r="39" fill="url(#wheel)" stroke="#303740" stroke-width="4.5"/>
-    <circle cx="454" cy="309" r="17" fill="#11151B" stroke="#505A65" stroke-width="2.4"/>
-    <path d="M454 294V324M439 309H469M443 298L465 320M465 298L443 320" stroke="#7A8590" stroke-opacity=".56" stroke-width="1.1"/>
+    <!-- wheels, closer to reference proportions -->
+    <circle cx="141" cy="305" r="41" fill="url(#wheel)" stroke="#303740" stroke-width="4.5"/>
+    <circle cx="141" cy="305" r="18" fill="#11151B" stroke="#505A65" stroke-width="2.4"/>
+    <path d="M141 289V321M125 305H157M130 294L152 316M152 294L130 316" stroke="#7A8590" stroke-opacity=".58" stroke-width="1.15"/>
+    <circle cx="456" cy="305" r="41" fill="url(#wheel)" stroke="#303740" stroke-width="4.5"/>
+    <circle cx="456" cy="305" r="18" fill="#11151B" stroke="#505A65" stroke-width="2.4"/>
+    <path d="M456 289V321M440 305H472M445 294L467 316M467 294L445 316" stroke="#7A8590" stroke-opacity=".58" stroke-width="1.15"/>
 
-    <!-- one scan effect only, clipped to vehicle -->
+    <!-- subtle 2.5D underbody shadow -->
+    <path d="M92 317H506" stroke="#07090C" stroke-width="14" opacity=".62"/>
+
+    <!-- scan animation only -->
     <g class="scan-motion" clip-path="url(#scanClip)">
       <g opacity="0">
-        <rect x="-112" y="118" width="92" height="240" fill="url(#scanBand)"/>
-        <rect x="-66" y="118" width="1.25" height="240" fill="#FF6B73" opacity=".62"/>
-        <animateTransform attributeName="transform" type="translate" values="0 0;704 0;704 0" keyTimes="0;.7;1" dur="9s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;.86;.86;0;0" keyTimes="0;.06;.66;.73;1" dur="9s" repeatCount="indefinite"/>
+        <rect x="-115" y="112" width="96" height="236" fill="url(#scanBand)"/>
+        <rect x="-67" y="112" width="1.25" height="236" fill="#FFFFFF" opacity=".52"/>
+        <animateTransform attributeName="transform" type="translate" values="0 0;708 0;708 0" keyTimes="0;.7;1" dur="8.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;.88;.88;0;0" keyTimes="0;.06;.66;.73;1" dur="8.8s" repeatCount="indefinite"/>
       </g>
     </g>
 
-    <text x="558" y="365" class="mono" text-anchor="end" fill="#4F5661" font-size="8.8" letter-spacing="1.2">POLO 6C GTI · 2D TECHNICAL STUDY</text>
+    <text x="558" y="360" class="mono" text-anchor="end" fill="#4F5661" font-size="8.8" letter-spacing="1.2">POLO 6C GTI · 2D TECHNICAL STUDY</text>
   </g>
 </g>
 
