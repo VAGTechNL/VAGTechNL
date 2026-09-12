@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/header-mobile.svg?v=12">
-    <img src="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/header.svg?v=12" alt="VAGTechNL - premium technical automotive community, knowledge and tooling platform" width="100%" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/header-mobile.svg?v=13">
+    <img src="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/header.svg?v=13" alt="VAGTechNL - premium technical automotive community, knowledge and tooling platform" width="100%" />
   </picture>
 </p>
 
@@ -13,40 +13,40 @@
 <a name="projects"></a>
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/projects-mobile.svg?v=12">
-    <img src="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/projects.svg?v=12" alt="VAGTechNL platform systems: Forum, Knowledge Base, CodeGarage, Garage and Tools" width="100%" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/projects-mobile.svg?v=13">
+    <img src="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/projects.svg?v=13" alt="VAGTechNL platform systems: Forum, Knowledge Base, CodeGarage, Garage and Tools" width="100%" />
   </picture>
 </p>
 
 <a name="technical-flow"></a>
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/technical-flow-mobile.svg?v=12">
-    <img src="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/technical-flow.svg?v=12" alt="VAGTechNL evidence-first technical method" width="100%" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/technical-flow-mobile.svg?v=13">
+    <img src="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/technical-flow.svg?v=13" alt="VAGTechNL evidence-first technical method" width="100%" />
   </picture>
 </p>
 
 <a name="principles"></a>
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/principles-mobile.svg?v=12">
-    <img src="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/principles.svg?v=12" alt="VAGTechNL engineering principles" width="100%" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/principles-mobile.svg?v=13">
+    <img src="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/principles.svg?v=13" alt="VAGTechNL engineering principles" width="100%" />
   </picture>
 </p>
 
 <a name="stack"></a>
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/stack-mobile.svg?v=12">
-    <img src="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/stack.svg?v=12" alt="VAGTechNL current software foundation and automotive technical domains" width="100%" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/stack-mobile.svg?v=13">
+    <img src="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/stack.svg?v=13" alt="VAGTechNL current software foundation and automotive technical domains" width="100%" />
   </picture>
 </p>
 
 <a name="metrics"></a>
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/metrics-mobile.svg?v=12">
-    <img src="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/metrics.svg?v=12" alt="VAGTechNL public GitHub profile telemetry, refreshed daily" width="100%" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/metrics-mobile.svg?v=13">
+    <img src="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/metrics.svg?v=13" alt="VAGTechNL public GitHub profile telemetry, refreshed daily" width="100%" />
   </picture>
 </p>
 
