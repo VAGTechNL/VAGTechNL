@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/header-v14.gif?v=14">
-    <img src="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/header-v14.gif?v=14" alt="VAGTechNL - premium technical automotive community, knowledge and tooling platform" width="100%" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/header-v14.gif?v=15">
+    <img src="https://raw.githubusercontent.com/VAGTechNL/VAGTechNL/main/assets/header-v14.gif?v=15" alt="VAGTechNL - premium technical automotive community, knowledge and tooling platform" width="100%" />
   </picture>
 </p>
 
