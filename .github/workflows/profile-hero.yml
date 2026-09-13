@@ -1,0 +1,38 @@
+name: Profile Hero
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/build_profile_hero.py"
+      - "assets/polo-6c-gti-study.jpg"
+      - ".github/workflows/profile-hero.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-hero:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Install Pillow
+        run: python3 -m pip install --disable-pip-version-check pillow
+
+      - name: Build profile hero
+        run: python3 scripts/build_profile_hero.py
+
+      - name: Commit generated hero
+        run: |
+          git config user.name "Profile Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add README.md assets/header-v15.gif assets/header-mobile-v15.gif
+          if git diff --cached --quiet; then
+            echo "No hero changes."
+            exit 0
+          fi
+          git commit -m "Generate profile hero v15"
+          git push
