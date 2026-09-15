@@ -66,7 +66,7 @@
         <path d="M18 1H54" stroke="#E30613" stroke-width="2" stroke-linecap="round" opacity=".90"/>
         <circle cx="22" cy="28" r="3" fill="#FF6B73" opacity=".75"/>
         <text x="34" y="32" class="mono" fill="#6F7682" font-size="10.5" letter-spacing="1.15">PUBLIC EVENTS · 30D</text>
-        <text x="20" y="72" fill="#FFFFFF" font-size="31" font-weight="760">103</text>
+        <text x="20" y="72" fill="#FFFFFF" font-size="31" font-weight="760">108</text>
       </g>
     </g>
 
@@ -84,7 +84,7 @@
 
       <path d="M0 96H1124" stroke="#1C2026"/>
       <text x="0" y="121" class="mono" fill="#6F7682" font-size="10">GITHUB PUBLIC API · DAILY 04:23 UTC</text>
-      <text x="1124" y="121" class="mono" fill="#6F7682" font-size="10" text-anchor="end">UPDATED · 2026-09-14 09:57 UTC</text>
+      <text x="1124" y="121" class="mono" fill="#6F7682" font-size="10" text-anchor="end">UPDATED · 2026-09-15 09:29 UTC</text>
     </g>
   </g>
 </svg>
